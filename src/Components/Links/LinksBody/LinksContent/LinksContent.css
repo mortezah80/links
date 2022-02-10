@@ -1,0 +1,33 @@
+.LinksContent {
+    flex:0.8;
+}
+.LinksC_Filters {
+    background-color: azure;
+    display: flex;
+}
+
+.LinksC_MultiBottun {
+    height: 50px;
+    background-color: #F5F5F5;
+    flex:0.5;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    align-items: center;
+
+}
+.LinksC_MultiBottun_Button {
+    border-bottom: 2px solid #6390ca;
+    cursor: pointer;
+    height: 40px;
+    padding:6px;
+}
+.LinksC_MultiBottun_ButtonActive {
+    border:2px solid #6390ca;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.1s ease;
+}
+.LC_Icon {
+    font-size:22px;
+}

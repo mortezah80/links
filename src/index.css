@@ -1,13 +1,50 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: "Shabnam" ,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif !important; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f7f8fc;
+  background-size:contain;
+  direction: rtl;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: 'Shabnam';
+  src: local('Shabnam'), url(./fonts/Shabnam.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Vazir';
+  src: local('Vazir'), url(./fonts/Vazir.ttf) format('truetype');
+}
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 5px;
+}
+
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:var(--PSR_ScrollbarColor); 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:var(--PSR_ScrollbarHoverColor) ; 
+
 }

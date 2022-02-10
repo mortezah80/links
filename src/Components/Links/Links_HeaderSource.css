@@ -1,0 +1,79 @@
+.Links_HeaderSource {
+    background-color: white;
+    height: 190px;
+    width: 170px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow:3px 3px 7px 1px rgba(0, 0, 0, 0.199);
+}
+
+.LH_telegramIcon {
+    color:#11cbfa;
+}
+.LH_instgramIcon {
+    color:#e1306c;
+}
+.LH_twitterIcon {
+    color:#00ACEE;
+}
+.LH_rssIcon {
+    color:#f38b5b;
+}
+.LH_paperIcon {
+    color:rgba(81,214,168,1);
+}
+.LH_sheypoorIcon {
+    color:#0084FF;
+}
+.LH_allIcon {
+    color:#0bc6d3;
+}
+
+
+
+.LH_telegramIconBack {
+    background-color:#11cbfa18;
+}
+.LH_instgramIconBack {
+    background-color:#e1306b2c;
+}
+.LH_twitterIconBack {
+    background-color:#00abee2f;
+}
+.LH_rssIconBack {
+    background-color:#f38b5b2a;
+}
+.LH_paperIconBack {
+    background-color:rgba(81, 214, 167, 0.205);
+}
+.LH_sheypoorIconBack {
+    background-color:#0084ff2d;
+}
+.LH_allIconBack {
+    background-color:#0bc6d32a;
+}
+
+
+.LH_Icon {
+    width: 50px;
+    height: 50px;
+    font-size:28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.LHBox_Number {
+    margin-top:30px;
+    font-size:21px;
+    font-weight: bolder;
+    direction: ltr;
+}
+.LHBox_describe {
+    margin-top:10px;
+    font-size:11px;
+    color:rgb(190, 190, 190);
+}
