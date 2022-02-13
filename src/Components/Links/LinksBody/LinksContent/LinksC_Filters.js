@@ -12,33 +12,36 @@ import Select from 'react-select'
 
 const IOSSwitch = withStyles((theme) => ({
     root: {
-      width: 42,
-      height: 26,
+      width: 44,
+      height: 22,
       padding: 0,
       margin: theme.spacing(1),
     },
     switchBase: {
       padding: 1,
       '&$checked': {
-        transform: 'translateX(16px)',
+        transform: 'translateX(20px)',
         color: theme.palette.common.white,
         '& + $track': {
-          backgroundColor: '#52d869',
+          backgroundColor: '#0085FE',
           opacity: 1,
           border: 'none',
+
         },
       },
       '&$focusVisible $thumb': {
-        color: '#52d869',
+        color: '#0085FE',
         border: '6px solid #fff',
       },
     },
     thumb: {
-      width: 24,
-      height: 24,
+      width: 16,
+      height: 16,
+      marginTop:"1.8px",
+      marginLeft:"3px",
     },
     track: {
-      borderRadius: 26 / 2,
+      borderRadius: 36 / 2,
       border: `1px solid ${theme.palette.grey[400]}`,
       backgroundColor: theme.palette.grey[50],
       opacity: 1,
@@ -74,33 +77,36 @@ function LinksC_Filters() {
     const customStyles = {
         control: (base, state) => ({
           ...base,
-          background: "rgb(55, 141, 216,0.2)",
+         /* background: "rgb(55, 141, 216,0.2)",*/
           color:"#3f97df",
           borderRadius: "7px",
           boxShadow: state.isFocused ? null : null,
           /*borderColor: state.isFocused ? "yellow" : "green",
           "&:hover": {
             borderColor: state.isFocused ? "red" : "blue"
-          }*/
-          height: 1,
-          width:150,
-          borderColor :"transparent",
+          },*/
+
+          width:130,
+ 
+          borderColor :"rgb(55, 141, 216,0.2)",
           "&:hover": {
-            borderColor: "transparent"
+            borderColor: "rgb(55, 141, 216,0.5)"
           }
         }),
         singleValue: (provided) => ({
           ...provided,
           color: 'rgb(55, 141, 216)',
-          fontSize:'13px',
-          fontWeight:"bold"
+          fontSize:'11px',
+          fontWeight:"bold",
+ 
         }),
         dropdownIndicator: base => ({
           ...base,
           fontSize:'8px',
           color: "#838AA4" ,
+ 
           "&:hover": {
-            color: "white" 
+            color: "rgb(55, 141, 216,0.8)" 
           }
         }),
         menu: base => ({
@@ -110,21 +116,10 @@ function LinksC_Filters() {
           // kill the gap
           marginTop: 0
         }),
-        option: (styles, {isFocused, isSelected}) => ({
-          ...styles,
-          background: isFocused
-              ? 'hsla(291, 64%, 42%, 0.5)'
-              : isSelected
-                  ? 'hsla(291, 64%, 42%, 1)'
-                  : undefined,
-          zIndex: 1
-      }),
         menuList: base => ({
           ...base,
           // kill the white space on first and last option
-          padding: 0,
-          backgroundColor:'#838AA4',
-          color:'white',
+          fontSize:'11px',
         })
       };
     const [state, setState] = React.useState({
@@ -141,16 +136,15 @@ function LinksC_Filters() {
     <div className='LinksC_Filters'>
         <div className='LinksC_SelectBoxesSwitch'>
             <div className='LinksC_SelectBoxContainer'>
-            <span className='LinksC_SelectBoxTitle'>گروه یک</span>
             <Select  className="LinksC_SelectBox" styles={customStyles}  options={options} 
                 components={{
                 IndicatorSeparator: () => null
                 }}
                 placeholder={<div className='LinksC_SelectPlaceHolder'>دیفالت</div>}
+                height={14}
             />
             </div>
             <div className='LinksC_SelectBoxContainer'>
-            <span className='LinksC_SelectBoxTitle'>گروه دو</span>
             <Select className="LinksC_SelectBox" styles={customStyles} options={options} 
             components={{
                 IndicatorSeparator: () => null
@@ -160,6 +154,7 @@ function LinksC_Filters() {
             </div>
             <div>
             <FormControlLabel
+                color='primary' 
                 control={<IOSSwitch checked={state.checkedB} onChange={handleChange} name="checkedB" />}
                 label="تایتل سوییچ"
             />

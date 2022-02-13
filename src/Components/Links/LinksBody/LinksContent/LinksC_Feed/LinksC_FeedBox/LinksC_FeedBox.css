@@ -1,0 +1,275 @@
+.LinksC_FeedBox {
+    height: 960px;
+    min-width: 200px;
+    background-color: white;
+    border-radius: 17px;
+    position: relative;
+    box-shadow:3px 3px 7px 1px rgba(107, 107, 107, 0.199);
+}
+.LicksFeedBox_TopImage {
+    width: 100%;
+    height:20%;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+}
+.LicksFeedBoxHeaderContainer {
+    position: relative;
+}
+.LicksFeedBox_TopImageContainer {
+    padding:5px 7px;
+    position: relative;
+}
+.LicksFeedBox_ProfileImage {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 6px solid white;
+}
+.LinksC_FeedBoxHeader {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    bottom: -40px;
+
+}
+.LicksFeedBox_ProfileImageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.LinksC_FeedBoxContent {
+    padding:0px 17px;
+}
+.LinksC_FeedBoxUserContent {
+    margin-top:60px;
+}
+.LinksC_FeedBoxUserContent {
+    display: flex;
+    flex-direction: column;
+}
+.LinksC_FeedBoxUserContentHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.LinksC_FeedBoxUserNameId {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.LinksC_FeedBoxUsername {
+    font-size: 14px;
+    font-weight: bold;
+}
+.LinksC_FeedBoxUserId {
+    direction: ltr;
+    font-size:11px;
+    color:rgb(207, 207, 207);
+    margin-top:3px;
+}
+.LinksC_FeedBoxUserEdit {
+    width: 90px;
+    height: 33px;
+    background-color: rgb(116, 95, 252);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:rgb(214, 200, 254);
+    font-size: 13px;
+    cursor: pointer;
+}
+.LinksC_FeedBoxUserBio {
+    margin-top:20px;
+    text-align: right;
+    font-size: 11px;
+    color:rgb(179, 179, 179);
+    padding:0px 2px;
+}
+
+.LinksC_FeedBoxUserFFDS {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 36px;
+    margin-top:23px;
+}
+.LinksC_FeedBoxUserFFD {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.LinksC_FeedBoxUserFFDNumber {
+    font-size: 15px;
+    font-weight: bold;
+}
+.LinksC_FeedBoxUserFFDTitle {
+    font-size: 11px;
+    color:rgb(184, 184, 184);
+    margin-top:5px;
+}
+
+.LinksC_FeedBoxKHMContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:2px dashed rgb(216, 216, 216);
+    padding:20px 0px;
+    position: relative;
+    align-items: flex-start;
+}
+.LinksC_FeedBoxKHMTitle {
+    flex:0.3;
+    display: flex;
+    flex-direction: column;
+
+}
+.LinksC_FeedBoxKHM_TitleName {
+    font-size:12px;
+}
+.LinksC_FeedBoxKHM_ShowMore {
+    font-size:11px;
+    color:rgb(115, 94, 249);
+    margin-top:5px;
+}
+.LinksC_FeedBoxKHM {
+    flex:0.6;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 7px;
+    column-gap: 12px
+}
+.LinkC_DotBorderBottom {
+    border-bottom:2px solid rgb(236, 236, 236);
+}
+
+.LinksC_FeedBoxProfilesContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+}
+.LinksC_FeedBoxProfilesTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.LinksC_FeedBoxProfilesTitle {
+    font-size:11px;
+    color:rgb(175, 175, 175);
+    padding:0px 5px;
+}
+.LinksC_FeedBoxProfiles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:15px;
+    padding:10px 10px;
+    background: rgb(247,248,243);
+    background: linear-gradient(90deg, rgba(247,248,243,1) 64%, rgba(255,255,255,0) 100%); 
+    border-radius: 25px;
+}
+.LinksC_FeedBoxOwnerProfile {
+    flex:0.1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow:2px 2px 3px 1px rgba(107, 107, 107, 0.76);
+}
+.LinksC_FeedBoxAccessProfiles {
+    flex:0.5;
+    display: flex;
+    direction: ltr;
+}
+.LinksC_FeedBox_AccessProfile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left:-7px;
+    box-shadow:2px 2px 3px 1px rgba(107, 107, 107, 0.76);
+}
+.LinksC_FeedBoxAccessProfilesMore {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left:-7px;
+    box-shadow:2px 2px 3px 1px rgba(107, 107, 107, 0.76);
+    background-color: rgb(99, 209, 180);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:13px;
+    color:rgb(248, 248, 248);
+    z-index: 10;
+    padding-top:3px;
+}
+.LinksC_FeedBoxTimes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:11px;
+    color:rgb(194, 194, 194);
+    padding: 0px 10px;
+    margin-top:8px;
+}
+.LinksC_FeedBoxFooterButtons {
+    margin-top:30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+
+}
+.LinksC_FeedBoxFooterButton {
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid rgba(117, 137, 252, 0.432);
+    font-size: 11px;
+    color:rgb(117, 137, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.LinksC_FeedBoxFooterButtonPurple {
+    background-color: rgb(117, 137, 252) ;
+    color:white;
+}
+
+
+.LinksC_FeedBoxCategoriesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:30px;
+    border-top:2px solid rgb(236, 236, 236);
+    border-bottom:2px solid rgb(236, 236, 236);
+    margin-top:10px;
+    height: 50px;
+}
+
+.LinksC_FeedBoxCategory {
+    width: 25px;
+    height: 25px;
+    color:white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    padding-bottom: 3px;
+    margin-right: -3px;
+    box-shadow:1px 1px 2px 0.5px rgba(182, 182, 182, 0.534);
+    border:0.5px solid rgb(211, 211, 211);
+}
+
+.LinksC_FeedBoxCategories {
+    display: flex;
+}
+.LinksC_FeedBoxCategoriesTitle {
+    font-size:10px;
+    color:rgb(163, 163, 163);
+}

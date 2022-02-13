@@ -1,0 +1,241 @@
+
+
+.LinksFormContainer {
+    padding: 10px 20px;
+    height: 555px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+  
+
+}
+.LinksFormInputContainerGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    row-gap: 10px;
+}
+.LinksFormTextField {
+    margin:0px !important;
+    padding: 0px !important;
+    border-radius: 20px !important;
+}
+.LinksFormInputContainer {
+    position: relative;
+    width: 170px;
+    height: 40px;
+}
+.LinksFormInput {
+    position: absolute;
+    right:0px;
+    bottom: 0px;
+    outline: 0px;
+    border: 1px solid rgb(201, 201, 201);
+    height: 37px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    z-index: 12;
+    background-color: transparent;
+}
+.LinksFormInputTitle {
+    position: absolute;
+    right:17px;
+    bottom:11px;
+    font-size:11px;
+    color:rgb(179, 179, 179);
+    z-index: 1;
+    transition: all 0.5s ease;
+    background-color: white;
+    height: 18px;
+    padding:0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LinksFormInput:focus ~ .LinksFormInputTitle {
+    transform: translateX(6px) translateY(-16px);
+    font-size: 10px;
+    transition: all 0.5s ease;
+    z-index: 13;
+    color:rgb(187, 218, 233);
+}
+.LinksFormInput:focus {
+    border-color:rgb(187, 218, 233) ;
+    border-width: 2px;
+}
+
+:root {
+    --input-color: #99A3BA;
+    --input-border: #CDD9ED;
+    --input-background: #fff;
+    --input-placeholder: #CBD1DC;
+    --input-border-focus: #275EFE;
+    --group-color: var(--input-color);
+    --group-border: var(--input-border);
+    --group-background: #EEF4FF;
+    --group-color-focus: #fff;
+    --group-border-focus: var(--input-border-focus);
+    --group-background-focus: #678EFE;
+  }
+  
+  .form-field {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    color: var(--input-color);
+    border: 1px solid var(--input-border);
+    background: var(--input-background);
+    transition: border 0.3s ease;
+  }
+  .form-field::-moz-placeholder {
+    color: var(--input-placeholder);
+  }
+  .form-field:-ms-input-placeholder {
+    color: var(--input-placeholder);
+  }
+  .form-field::placeholder {
+    color: var(--input-placeholder);
+  }
+  .form-field:focus {
+    outline: none;
+    border-color: var(--input-border-focus);
+  }
+  
+  .LinksFormEmailContainer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    direction: ltr;
+    margin:auto;
+    margin-top: 15px;
+  }
+  .LinksFormEmailContainer > span,
+  .LinksFormEmailContainer .form-field {
+    white-space: nowrap;
+    display: block;
+  }
+  .LinksFormEmailContainer > span:not(:first-child):not(:last-child),
+  .LinksFormEmailContainer .form-field:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+  .LinksFormEmailContainer > span:first-child,
+  .LinksFormEmailContainer .form-field:first-child {
+    border-radius: 6px 0 0 6px;
+  }
+  .LinksFormEmailContainer > span:last-child,
+  .LinksFormEmailContainer .form-field:last-child {
+    border-radius: 0 6px 6px 0;
+  }
+  .LinksFormEmailContainer > span:not(:first-child),
+  .LinksFormEmailContainer .form-field:not(:first-child) {
+    margin-left: -1px;
+  }
+  .LinksFormEmailContainer .form-field {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .LinksFormEmailContainer > span {
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--group-color);
+    background: var(--group-background);
+    border: 1px solid var(--group-border);
+    transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+  }
+  .LinksFormEmailContainer:focus-within > span {
+    color: var(--group-color-focus);
+    background: var(--group-background-focus);
+    border-color: var(--group-border-focus);
+  }
+  
+.LinksFormInputContainerGrid2 {
+    margin-top:15px;
+}
+.LinksFormBigInputContainer {
+    margin-top:25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+.LinksFormBigInputTitle {
+    font-size: 11px;
+    color:grey;
+    margin-right:6px;
+}
+.LinksFormBigInput {
+    outline: 0px;
+    border: 1px solid rgb(201, 201, 201);
+    height: 127px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    resize: none;
+}
+.LinksFormHeaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    margin-bottom: 30px;
+    margin-top:10px;
+}
+.LinksFormHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right:10px;
+}
+.LinksFormHeaderTitle {
+    font-size: 12px;
+}
+.LinksFormHeaderDescribe {
+    font-size: 10px;
+    color:rgb(189, 189, 189);
+    margin-top:4px;
+}
+.LinksFormHeaderIcon {
+    font-size: 30px;
+}
+.LinksFormButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top:30px;
+}
+.LinksFormButton {
+    height: 40px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:12px;
+
+}
+.LinksFormButton1 {
+    width: 60%;
+    background-color: rgb(1, 98, 255);
+    color:rgb(178, 220, 255)
+}
+.LinksFormButton2 {
+    width: 37%;
+    background-color: rgba(190, 190, 190, 0.301);
+    color:rgb(142, 141, 147)
+}

@@ -1,4 +1,7 @@
 .LinksBody {
     display: flex;
-    margin-top:50px;
+    width: 90%;
+    margin:auto;
+
+    justify-content: space-between;
 }

@@ -1,0 +1,42 @@
+.LinksC_FeedBox_Tag {
+    width: 70px;
+    height: 28px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top:80px;
+}
+.LinksC_FeedBox_Tag1 {
+    color:rgb(234, 158, 97);
+    background-color:rgba(234, 159, 97, 0.2) ;
+}
+.LinksC_FeedBox_Tag2 {
+    color:rgb(71, 104, 202);
+    background-color: rgb(71, 104, 202,0.2);
+}
+.LinksC_FeedBox_Tag3 {
+    color:rgb(117, 204, 182);
+    background-color: rgb(117, 204, 182,0.2);
+}
+.LinksC_FeedBox_Tag4 {
+    color:rgb(217, 163, 232);
+    background-color: rgb(217, 163, 232,0.2);
+}
+.LinksC_FeedBox_Tag5 {
+    color:rgb(109, 108, 114);
+    background-color: rgb(109, 108, 114,0.2);
+}
+.LinksC_FeedBox_Tag6 {
+    color:rgb(225, 106, 108);
+    background-color: rgb(225, 106, 108,0.2);
+}
+.LinksC_FeedBox_Tag7 {
+    color:rgb(212, 67, 144);
+    background-color: rgb(212, 67, 144,0.2);
+}
+.LinksC_FeedBox_Tag8 {
+
+}

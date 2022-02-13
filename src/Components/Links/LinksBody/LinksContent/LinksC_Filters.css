@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     background-color: white;
+ 
 }
 
 .LinksC_MultiBottun {
@@ -18,6 +19,7 @@
     cursor: pointer;
     height: 40px;
     padding:6px;
+
 }
 .LinksC_MultiBottun_ButtonActive {
     border:2px solid #6390ca;
@@ -31,11 +33,13 @@
 }
 
 
+
 .LinksC_SelectBoxContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right:10px;
+    padding: 10px 0px;
 }
 .LinksC_SelectBoxContainer > span {
     font-family: 'Shabnam';

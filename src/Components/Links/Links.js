@@ -20,19 +20,22 @@ function Links() {
             <div className='LinksHeaderContent'>
                 <div className='LinksHeaderButtons'>
                     <div className={['LinksHeaderButtonContainer' , LHActiveButton===1? 'LinksHeaderButtonActive' : ''].join(' ')} onClick={() => setLHActiveButton(1)}>
-                        <div className='LinksHeaderButton'>
-
+                        <div className='LinksHeaderButton LinksHeaderButtonContainer1'>
+                            <span>س</span>
                         </div>
+                        <span>سلام</span>
                     </div>
                     <div className={['LinksHeaderButtonContainer' , LHActiveButton===2? 'LinksHeaderButtonActive' : ''].join(' ')} onClick={() => setLHActiveButton(2)}>
-                        <div className='LinksHeaderButton'> 
-
+                        <div className='LinksHeaderButton LinksHeaderButtonContainer2'> 
+                            <span>خ</span>
                         </div>
+                        <span>خداحافظی</span>
                     </div>
                     <div className={['LinksHeaderButtonContainer' , LHActiveButton===3? 'LinksHeaderButtonActive' : ''].join(' ')} onClick={() => setLHActiveButton(3)}>
-                        <div className='LinksHeaderButton'>
-
+                        <div className='LinksHeaderButton LinksHeaderButtonContainer3'>
+                            <span>م</span>
                         </div>
+                        <span></span>
                     </div>
 
                 </div>
