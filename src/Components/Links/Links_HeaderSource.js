@@ -47,8 +47,16 @@ function Links_HeaderSource(props) {
               null
           }
         </div>
-        <span className='LHBox_Number'>245.452 </span>
-        <span className='LHBox_describe'>لینک های ثبت شده ی تلگرام</span>
+        <div className='Links_HeaderSourceContentContainer Links_HeaderSourceContentContainer1'>
+          <span className='LHBox_Number'>245.452 </span>
+          <span className='LHBox_describe'>لینک های ثبت شده ی تلگرام</span>
+          <div className={['LHBox_Percent',LHIconColor].join(" ")}><span>35%</span></div>
+        </div>
+        <div className='Links_HeaderSourceContentContainer Links_HeaderSourceContentContainer2'>
+          <span className='LHBox_Number'>245.452 </span>
+          <span className='LHBox_describe'>لینک های ثبت شده ی تلگرام</span>
+          <div className={['LHBox_Percent',LHIconColor].join(" ")}><span>35%</span></div>
+        </div>
     </div>
   )
 }

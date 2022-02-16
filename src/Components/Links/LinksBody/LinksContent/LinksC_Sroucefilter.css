@@ -1,0 +1,84 @@
+.LinksC_Sroucefilter {
+    width: 40px;
+    height: 40px;
+    font-size:21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin:0px 10px;
+}
+
+.LCS_telegramIcon {
+    color:#11cbfa;
+}
+.LCS_instgramIcon {
+    color:#e1306c;
+}
+.LCS_twitterIcon {
+    color:#00ACEE;
+}
+.LCS_rssIcon {
+    color:#f38b5b;
+}
+.LCS_paperIcon {
+    color:rgba(81,214,168,1);
+}
+.LCS_sheypoorIcon {
+    color:#0084FF;
+}
+.LCS_allIcon {
+    color:#0bc6d3;
+}
+
+
+
+.LCS_telegramIconBack {
+    background-color:#11cbfa18;
+}
+.LCS_instgramIconBack {
+    background-color:#e1306b2c;
+}
+.LCS_twitterIconBack {
+    background-color:#00abee2f;
+}
+.LCS_rssIconBack {
+    background-color:#f38b5b2a;
+}
+.LCS_paperIconBack {
+    background-color:rgba(81, 214, 167, 0.205);
+}
+.LCS_sheypoorIconBack {
+    background-color:#0084ff2d;
+}
+.LCS_allIconBack {
+    background-color:#0bc6d32a;
+}
+
+.LinksC_SroucefilterContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 10px;
+    cursor: pointer;
+    margin-bottom: -2px;
+}
+.LinksC_SroucefilterActive {
+    border-bottom: 3px solid rgb(197, 28, 197);
+}
+.LinksC_SroucefilterTitle {
+    margin-top: 5px;
+    font-size: 11px;
+    color:rgb(60, 160, 241);
+}
+.LinksC_SroucefilterActive {
+    background-color: rgba(45, 167, 238, 0.075);
+    /*border-top-left-radius: 4px;
+    border-top-right-radius: 4px;*/
+    border-radius: 4px;
+    font-weight: bold;
+}
+.LinksC_SroucefilterActive > span {
+    color:rgb(197, 28, 197);
+}

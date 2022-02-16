@@ -1,6 +1,6 @@
 .Links_HeaderSource {
     background-color: white;
-    height: 190px;
+    height: 210px;
     width: 170px;
     border-radius: 14px;
     display: flex;
@@ -36,21 +36,41 @@
 
 .LH_telegramIconBack {
     background-color:#11cbfa18;
+
+}
+.LH_telegramIconBack > span {
+    color:#11cbfa;
 }
 .LH_instgramIconBack {
     background-color:#e1306b2c;
+
+}
+.LH_instgramIconBack > span {
+    color:#e1306c;
 }
 .LH_twitterIconBack {
     background-color:#00abee2f;
 }
+.LH_twitterIconBack > span {
+    color:#00ACEE;
+}
 .LH_rssIconBack {
     background-color:#f38b5b2a;
+}
+.LH_rssIconBack > span {
+    color:#f38b5b;
 }
 .LH_paperIconBack {
     background-color:rgba(81, 214, 167, 0.205);
 }
+.LH_paperIconBack > span {
+    color:rgba(81,214,168,1);
+}
 .LH_sheypoorIconBack {
     background-color:#0084ff2d;
+}
+.LH_sheypoorIconBack > span {
+    color:#0084FF;
 }
 .LH_allIconBack {
     background-color:#0bc6d32a;
@@ -65,15 +85,44 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    margin-bottom: 10px;
 }
 .LHBox_Number {
-    margin-top:30px;
-    font-size:21px;
+    margin-top:10px;
+    font-size:17px;
     font-weight: bolder;
     direction: ltr;
 }
 .LHBox_describe {
-    margin-top:10px;
+    margin-top:5px;
     font-size:11px;
     color:rgb(190, 190, 190);
+}
+.LHBox_Percent {
+    position: absolute;
+    width: 30px;
+    height: 16px;
+    border-radius: 4px;
+    font-size:9px;
+    top:5px;
+    right:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+.Links_HeaderSourceContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+.Links_HeaderSourceContentContainer1 {
+    /*border-bottom: 1px solid rgba(219, 219, 219, 0.438);*/
+    padding-bottom: 10px;
+}
+.Links_HeaderSourceContentContainer2 {
+    border-top: 2px solid rgba(219, 219, 219, 0.438);
+    border-radius: 10px;
 }

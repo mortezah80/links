@@ -29,6 +29,9 @@
     justify-content:left;
     
 }
+.mySwiper {
+    margin-bottom: 50px !important;
+}
 .LinksHeaderButtons {
     flex:0.2;
     display: flex;
@@ -79,12 +82,23 @@
     cursor: pointer;
 }
 .LinksHeaderButtonContainer {
-    padding: 4px;
-    border-radius: 10px;
+    padding: 3px;
+    border-radius: 14px;
+    width: 70px;
+    height: 70px;
 }
 .LinksHeaderButtonActive {
-    border:1px solid grey;
+    border:2px solid grey;
 
+}
+.LinksHeaderButtonActive1 {
+    border-color: rgb(250,46,135);
+}
+.LinksHeaderButtonActive2 {
+    border-color: rgb(1, 186, 210);
+}
+.LinksHeaderButtonActive3 {
+    border-color: rgb(184,101,209);
 }
 
 .swiper-button-prev {
@@ -104,12 +118,35 @@
 .LinksHeaderButtonContainer1 {
     background: rgb(250,46,135);
     background: linear-gradient(45deg, rgba(250,46,135,1) 0%, rgba(246,58,196,1) 100%); 
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='60' height='60' preserveAspectRatio='none' viewBox='0 0 60 60'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1794%26quot%3b)' fill='none'%3e%3crect width='60' height='60' x='0' y='0' fill='url(%23SvgjsLinearGradient1795)'%3e%3c/rect%3e%3cpath d='M49.24758875317354 18.675322523446113L55.112647737295134 5.502184363991688 41.93950957784071-0.362874620129908 36.074450593719114 12.810263539324517z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M41.531505627182256 4.526623204634889L29.044842430848824 14.638123688909435 39.156342915123375 27.124786885242862 51.6430061114568 17.01328640096832z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M24.9801316791062 19.845649054695997L19.529796760481403 14.000880428807841 13.48781128096157 25.098767119689114z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M26.913885063610465 8.942798518072873L12.772915877759921 1.4239118291218018 5.25402918880885 15.564881014972347 19.394998374659394 23.083767703923417z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M15.34347316572364 67.99969761390444L17.0417177764334 54.16860518484334 3.2106253473722894 52.47036057413358 1.5123807366625304 66.30145300319468z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M0.5341201236003617 0.7912976444400157L-2.2369304427042107 14.974935544198921 9.777899230542744 11.071080736477407z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M8.080420483658214 8.201313250191678L22.873626423231315 12.724050183055663 27.3963633560953-2.0691557565174357 12.6031574165222-6.591892689381421z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M39.30204335916788 39.537372224591024L26.808640779145 31.424061724250798 31.188732858827656 52.030774804613905z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-8.929444175188447 9.571563571760823L3.6926923239883944 17.7684748567017 11.88960360892927 5.146338357524858-0.7325328902475707-3.0505729274160185z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1794'%3e%3crect width='60' height='60' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1795'%3e%3cstop stop-color='rgba(240%2c 126%2c 242%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(157%2c 29%2c 210%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+
 }
 .LinksHeaderButtonContainer2 {
     background: rgb(43,210,165);
     background: linear-gradient(45deg, rgba(43,210,165,1) 0%, rgba(56,119,224,1) 100%); 
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='60' height='60' preserveAspectRatio='none' viewBox='0 0 60 60'%3e%3cg mask='url(%26quot%3b%23SvgjsMask2034%26quot%3b)' fill='none'%3e%3crect width='60' height='60' x='0' y='0' fill='url(%23SvgjsLinearGradient2035)'%3e%3c/rect%3e%3cpath d='M37.50786165213547 29.291567138011775L52.216601148829156 21.79709003446246 44.72212404527985 7.088350537768768 30.013384548586153 14.582827641318083z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M31.00072490137673 10.572504851633145L38.307237411112304-3.137509871018416 24.728895378349314-2.9004990292189934z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M8.680396059335106 46.550490225238335L11.034291934285836 61.41240387109582 23.54230970519259 44.196594350287604z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M27.552008345115773 24.84282108222996L14.256801261785643 31.91200808432909 21.325988263884774 45.20721516765922 34.62119534721491 38.13802816556009z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M55.03805008012214 58.41141614890388L47.90818210421802 48.94976177264313 38.44652772795726 56.07962974854724 45.57639570386138 65.541284124808z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M3.264134242977413 19.05057055644298L15.562047275965643 15.755354690665607 12.266831410188269 3.4574416576773768-0.031081622799960407 6.752657523454751z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M53.942608588337066 27.681961852190263L56.02959685554756 19.89321560416056 43.30298334989776 20.657106327359674z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M52.99597365738419 4.1092763957636365L50.18283059193591 11.437764632982137 62.5821344804878 11.9932351125453z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M52.51328697667235 46.22717517344801L52.51328697667235 40.02040124705462 43.20312608708226 43.12378821025132z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M47.68998375172139 71.73864836909995L62.94453853664384 64.29850487642997 55.50439504397386 49.043950091507526 40.24984025905141 56.4840935841775z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask2034'%3e%3crect width='60' height='60' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2035'%3e%3cstop stop-color='rgba(126%2c 242%2c 210%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(29%2c 121%2c 210%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
 }
 .LinksHeaderButtonContainer3 {
     background: rgb(184,101,209);
     background: linear-gradient(45deg, rgba(184,101,209,1) 0%, rgba(110,65,189,1) 100%); 
+ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='60' height='60' preserveAspectRatio='none' viewBox='0 0 60 60'%3e%3cg mask='url(%26quot%3b%23SvgjsMask2336%26quot%3b)' fill='none'%3e%3crect width='60' height='60' x='0' y='0' fill='url(%23SvgjsLinearGradient2337)'%3e%3c/rect%3e%3cpath d='M55.341185321541026 38.93186043045604L46.22441155035699 34.87281123005643 42.16536234995738 43.98958500124047 51.28213612114141 48.048634201640084z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M2.4480927335714133 21.622304526023637L5.571734854071472 39.33735929500763 20.16314750255541 18.49866240552358z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M11.640055665512412-3.828555655504353L-2.8645277507618694 6.709641047420197 7.67366895216268 21.214224463694478 22.17825236843696 10.676027760769928z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M45.8893106948383 21.531360794741516L36.844530220670855 37.81196564824293 53.12513507417226 37.811965648242925z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M20.130203330844658 20.996652493607755L19.059018238082118 10.710719645978317 11.653761337292778 15.89593635029049z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M51.638030850103156 41.50826669093764L49.0545961991647 54.798885799419935 62.345215307646995 57.38232045035839 64.92864995858545 44.091701341876096z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M10.480649715451898 45.545722518578884L18.16081210716147 56.116559180810576 28.73164876939316 48.43639678910101 21.051486377683588 37.86556012686931z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-2.62293219300268-2.22318127939894L3.4964839723285923 9.285766655207748 15.005431906935282 3.166350489876476 8.886015741604009-8.342597444730213z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M24.906188513576343 26.89881738346505L32.41810311186014 22.38520372785808 21.891725329307782 13.37413865823587z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M22.99560363832394 21.147008980166785L38.64153248235181 24.18826946561566 41.682792967800694 8.542340621587785 26.036864123772816 5.50108013613891z' fill='rgba(204%2c 204%2c 204%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask2336'%3e%3crect width='60' height='60' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2337'%3e%3cstop stop-color='rgba(249%2c 71%2c 140%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(226%2c 17%2c 178%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
+.LinksHeaderButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size:13px;
+}
+.LinksHeaderButtonDescribeContainer {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.LinksHeaderButtonDescribe {
+    font-size: 10px;
+    color:rgba(214, 214, 214, 0.671);
+    margin-top:7px;
 }

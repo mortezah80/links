@@ -17,6 +17,8 @@
     font-size:18px;
     top:45%;
     right:43%;
+    color:rgb(105, 75, 208);
+    font-size:16px;
 }
 .LinksWidgets_TopCategories {
     display: grid;
@@ -86,6 +88,7 @@
     border-radius: 8px;
     padding: 0px 15px;
     box-shadow:3px 3px 7px 1px rgba(143, 143, 143, 0.199);
+
     align-items: center;
 }
 .LinksWidgets_CategoriesAddButton {
@@ -102,4 +105,8 @@
     margin-bottom: 15px;
     cursor: pointer;
     box-shadow:1px 2px 4px 1px rgba(143, 143, 143, 0.575);
+}
+.LinksWidgets_CategoriesTitlesSticky {
+    position: sticky;
+    top:10px;
 }

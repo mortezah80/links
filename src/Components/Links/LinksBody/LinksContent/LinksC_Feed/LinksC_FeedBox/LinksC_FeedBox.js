@@ -1,10 +1,14 @@
-import React from 'react'
+import React , {useState} from 'react'
 import './LinksC_FeedBox.css'
 import LinksC_FeedBox_Tag from './LinksC_FeedBox_Tag'
 import LinksC_FeedBox_KHMTag from './LinksC_FeedBox_KHMTag'
 import zIndex from '@material-ui/core/styles/zIndex';
 
 function LinksC_FeedBox(props) {
+    const [Showmore , setShowmore] = useState(false)
+    const [Showmore2 , setShowmore2] = useState(false)
+    const [Showmore3 , setShowmore3] = useState(false)
+    const [ShowDownload , SetShowDownload] = useState(false)
     let FeedBoxzIndexCat = 1;
     const stc = require('string-to-color');
     const mycolor = stc(props.title); // => "#7f1de4"
@@ -29,7 +33,14 @@ function LinksC_FeedBox(props) {
                 <LinksC_FeedBox_Tag type={3}/>
                 <div className='LicksFeedBox_ProfileImageContainer'>
                     <img className='LicksFeedBox_ProfileImage' src="https://external-preview.redd.it/Tz6nNKdrp6UlZhO26SIFcl8Tl1aH_eF7YLYK7A7N3RU.jpg?auto=webp&s=a9189138061b013f03beefdc3111d4dc97d97a1a" alt="hi"/>
-                    <span>...</span>
+                    <div className='LinksC_FeedBoxHeaderDownloadBottomContainer'>
+                        <span className='LinksC_FeedBoxHeaderDownloadButton' onClick={() => SetShowDownload(!ShowDownload)}>...</span>
+                        <div className='LinksC_FeedBoxHeaderDownloadContainer' style={{display: ShowDownload? "block" : "none"}}>
+                            <div className='LinksC_FeedBoxHeaderDownload'><span>دانلود jpg</span></div>
+                            <div className='LinksC_FeedBoxHeaderDownload'><span>دانلود png</span></div>
+                        </div>
+                    </div>
+                    
                 </div>
                 <LinksC_FeedBox_Tag type={4}/>
             </div>
@@ -82,7 +93,7 @@ function LinksC_FeedBox(props) {
             <div className='LinksC_FeedBoxKHMContainer'>
                 <div className='LinksC_FeedBoxKHMTitle'>           {/* Keys , Hashtags , MetaData => KHM*/}
                     <span className='LinksC_FeedBoxKHM_TitleName'>کلمات کلیدی</span>
-                    <span className='LinksC_FeedBoxKHM_ShowMore'>نمایش بیشتر</span>
+                    <span className='LinksC_FeedBoxKHM_ShowMore' onClick={() => setShowmore(!Showmore)}>{Showmore? "نمایش کمتر" : "نمایش بیشتر"}  </span>
                 </div>
                 <div className='LinksC_FeedBoxKHM'>
                     <LinksC_FeedBox_KHMTag text="طبیعت"/>
@@ -90,13 +101,24 @@ function LinksC_FeedBox(props) {
                     <LinksC_FeedBox_KHMTag text="طبیعت"/>
                     <LinksC_FeedBox_KHMTag text="طبیعت"/>
                     <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                    {
+                        Showmore ? 
+                        <>
+                        <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
+                        <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                        <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
+                        <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                        </>
+                        :
+                        <></>
+                    }
 
                 </div>
             </div>
             <div className='LinksC_FeedBoxKHMContainer'>
                 <div className='LinksC_FeedBoxKHMTitle'>
                     <span className='LinksC_FeedBoxKHM_TitleName'>هشتگ ها </span>
-                    <span className='LinksC_FeedBoxKHM_ShowMore'>نمایش بیشتر</span>
+                    <span className='LinksC_FeedBoxKHM_ShowMore'  onClick={() => setShowmore2(!Showmore2)}>{Showmore? "نمایش کمتر" : "نمایش بیشتر"} </span>
                 </div>
                 <div className='LinksC_FeedBoxKHM'>
                     <LinksC_FeedBox_KHMTag text="طبیعت"/>
@@ -104,12 +126,23 @@ function LinksC_FeedBox(props) {
                     <LinksC_FeedBox_KHMTag text="طبیعت"/>
                     <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
                     <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                    {
+                        Showmore2 ? 
+                        <>
+                        <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
+                        <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                        <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
+                        <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                        </>
+                        :
+                        <></>
+                    }
                 </div>
             </div>
             <div className='LinksC_FeedBoxKHMContainer LinkC_DotBorderBottom'>
                 <div className='LinksC_FeedBoxKHMTitle'>
                     <span className='LinksC_FeedBoxKHM_TitleName'>متا دیتا </span>
-                    <span className='LinksC_FeedBoxKHM_ShowMore'>نمایش بیشتر</span>
+                    <span className='LinksC_FeedBoxKHM_ShowMore'  onClick={() => setShowmore3(!Showmore3)}>{Showmore? "نمایش کمتر" : "نمایش بیشتر"}  </span>
                 </div>
                 <div className='LinksC_FeedBoxKHM'>
                     <LinksC_FeedBox_KHMTag text="طبیعت"/>
@@ -117,6 +150,17 @@ function LinksC_FeedBox(props) {
                     <LinksC_FeedBox_KHMTag text="طبیعت"/>
                     <LinksC_FeedBox_KHMTag text="طبیعت"/>
                     <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                    {
+                        Showmore3 ? 
+                        <>
+                        <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
+                        <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                        <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
+                        <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                        </>
+                        :
+                        <></>
+                    }
                 </div>
             </div>
             <div className='LinksC_FeedBoxProfilesContainer'>
@@ -131,7 +175,7 @@ function LinksC_FeedBox(props) {
                             Profiles.slice(0,4).map((profileUrl) => {
                                 zProfile = zProfile+1
                                 return (
-                                    <img className='LinksC_FeedBox_AccessProfile' src={profileUrl} style={{zIndex:zProfile}} />
+                                    <img className='LinksC_FeedBox_AccessProfile' src={profileUrl} style={{zIndex:zProfile}} title="hi"/>
                                 )
                             } )
                         }

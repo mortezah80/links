@@ -19,25 +19,31 @@ function Links() {
             </div>
             <div className='LinksHeaderContent'>
                 <div className='LinksHeaderButtons'>
-                    <div className={['LinksHeaderButtonContainer' , LHActiveButton===1? 'LinksHeaderButtonActive' : ''].join(' ')} onClick={() => setLHActiveButton(1)}>
-                        <div className='LinksHeaderButton LinksHeaderButtonContainer1'>
-                            <span>س</span>
+                    <div className='LinksHeaderButtonDescribeContainer'>
+                        <div className={['LinksHeaderButtonContainer' , LHActiveButton===1? 'LinksHeaderButtonActive LinksHeaderButtonActive1' : ''].join(' ')} onClick={() => setLHActiveButton(1)}>
+                            <div className='LinksHeaderButton LinksHeaderButtonContainer1'>
+                                <span>سلام</span>
+                            </div>
                         </div>
-                        <span>سلام</span>
+                        <span className='LinksHeaderButtonDescribe'>توضیح سلام</span>
                     </div>
-                    <div className={['LinksHeaderButtonContainer' , LHActiveButton===2? 'LinksHeaderButtonActive' : ''].join(' ')} onClick={() => setLHActiveButton(2)}>
-                        <div className='LinksHeaderButton LinksHeaderButtonContainer2'> 
-                            <span>خ</span>
+                    <div className='LinksHeaderButtonDescribeContainer'>
+                        <div className={['LinksHeaderButtonContainer' , LHActiveButton===2? 'LinksHeaderButtonActive LinksHeaderButtonActive2' : ''].join(' ')} onClick={() => setLHActiveButton(2)}>
+                            <div className='LinksHeaderButton LinksHeaderButtonContainer2'> 
+                                <span>خدافظی</span>
+                            </div>
                         </div>
-                        <span>خداحافظی</span>
+                        <span className='LinksHeaderButtonDescribe'>توضیح خدافظی</span>
                     </div>
-                    <div className={['LinksHeaderButtonContainer' , LHActiveButton===3? 'LinksHeaderButtonActive' : ''].join(' ')} onClick={() => setLHActiveButton(3)}>
-                        <div className='LinksHeaderButton LinksHeaderButtonContainer3'>
-                            <span>م</span>
+                    <div className='LinksHeaderButtonDescribeContainer'>
+                        <div className={['LinksHeaderButtonContainer' , LHActiveButton===3? 'LinksHeaderButtonActive LinksHeaderButtonActive3' : ''].join(' ')} onClick={() => setLHActiveButton(3)}>
+                            <div className='LinksHeaderButton LinksHeaderButtonContainer3'>
+                                <span>مهربانی</span>
+                            </div>
+                            
                         </div>
-                        <span></span>
+                        <span className='LinksHeaderButtonDescribe'>توضیح مهربانی</span>
                     </div>
-
                 </div>
                 <div className='LinksHeaderSources'>
                     <Swiper
@@ -53,15 +59,16 @@ function Links() {
                         }}
                         navigation={true}
                         modules={[Pagination, Navigation]}
-                        className="mySwiper"
+                       
                     >
+                        <div className="mySwiper">
                         <SwiperSlide><Links_HeaderSource type="telegram" /></SwiperSlide>
                         <SwiperSlide><Links_HeaderSource type="instagram" /></SwiperSlide>
                         <SwiperSlide><Links_HeaderSource type="twitter" /></SwiperSlide>
                         <SwiperSlide><Links_HeaderSource type="rss" /></SwiperSlide>
                         <SwiperSlide><Links_HeaderSource type="sheypoor" /></SwiperSlide>
                         <SwiperSlide><Links_HeaderSource type="telegram" /></SwiperSlide>
-                        
+                        </div>
                     </Swiper>
                     
                     

@@ -54,39 +54,39 @@ function AddForm(props) {
             </div>
             <div className="LinksFormInputContainerGrid">
                 <div className="LinksFormInputContainer">
-                    <input className="LinksFormInput" type="text" />
+                    <input required="required" className="LinksFormInput" type="text" />
                     <span className="LinksFormInputTitle">نام کاربری</span>
                 </div>
                 <div className="LinksFormInputContainer">
-                    <input className="LinksFormInput" type="text" />
+                    <input required="required" className="LinksFormInput" type="text" />
                     <span className="LinksFormInputTitle">رمز عبور</span>
                 </div>
                 <div className="LinksFormInputContainer">
-                    <input className="LinksFormInput" type="text" />
-                    <span className="LinksFormInputTitle">نام کاربری</span>
+                    <input required="required" className="LinksFormInput" type="text" />
+                    <span className="LinksFormInputTitle">شماره موبایل</span>
                 </div>
                 <div className="LinksFormInputContainer">
-                    <input className="LinksFormInput" type="text" />
-                    <span className="LinksFormInputTitle">رمز عبور</span>
+                    <input required="required" className="LinksFormInput" type="text" />
+                    <span className="LinksFormInputTitle">کشور</span>
                 </div>
             </div>
             <div class="LinksFormEmailContainer">
-                <input class="form-field" type="email" placeholder="Email"/>
+                <input required="required" class="form-field" type="email" placeholder="Email"/>
                 <span>@gmail.com</span>
             </div>
             <div className="LinksFormInputContainerGrid LinksFormInputContainerGrid2 ">
                 <div className="LinksFormInputContainer">
-                    <input className="LinksFormInput" type="text" />
-                    <span className="LinksFormInputTitle">نام کاربری</span>
+                    <input required="required" className="LinksFormInput" type="password" />
+                    <span className="LinksFormInputTitle">پسورد</span>
                 </div>
                 <div className="LinksFormInputContainer">
-                    <input className="LinksFormInput" type="text" />
-                    <span className="LinksFormInputTitle">رمز عبور</span>
+                    <input required="required" className="LinksFormInput" type="password" />
+                    <span className="LinksFormInputTitle">تکرار پسورد</span>
                 </div>
             </div>
             <div className='LinksFormBigInputContainer'>
                 <span className='LinksFormBigInputTitle'>اطلاعات تکمیلی را بنویسید</span>
-                <textarea className="LinksFormBigInput"  />
+                <textarea  className="LinksFormBigInput"  />
             </div>
             <div className='LinksFormButtons'>
                 <div className='LinksFormButton LinksFormButton1'><span>اضافه کردن</span></div>

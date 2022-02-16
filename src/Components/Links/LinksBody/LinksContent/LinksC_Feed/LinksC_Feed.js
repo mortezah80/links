@@ -11,6 +11,9 @@ function LinksC_Feed() {
         <LinksC_FeedBox/>
         <LinksC_FeedBox/>
         <LinksC_FeedBox/>
+        <LinksC_FeedBox/>
+        <LinksC_FeedBox/>
+        <LinksC_FeedBox/>
     </div>
   )
 }

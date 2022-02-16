@@ -1,4 +1,42 @@
 .LinksContent {
     flex:0.78;
-    margin-top:110px
+    margin-top:140px
+}
+
+.LinksC_SroucefiltersContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    /*background-color: rgb(249, 251, 250);*/
+    padding: 0px 27px;
+    padding-top: 7px;
+    border-bottom: 1px solid rgba(231, 41, 231, 0.171);
+    padding-bottom: -10px;
+}
+
+.LinksC_Sroucefilters {
+    display: flex;
+
+}
+.LinksC_SroucefiltersArrow {
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgba(32, 32, 235, 0.432);
+    box-shadow:2px 2px 5px 1px rgba(202, 202, 202, 0.5);
+    cursor: pointer;
+}
+
+.LinksContentStickyContainer {
+    position: sticky;
+    top:0px;
+    z-index: 10;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:3px 3px 7px 1px rgba(202, 202, 202, 0.5);
 }

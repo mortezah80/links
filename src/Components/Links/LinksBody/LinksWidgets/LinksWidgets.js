@@ -26,7 +26,7 @@ export const data = {
       ],
       borderWidth: 1.5,
       spacing:30,
-      borderRadius:30,
+      borderRadius:20,
     },
   ],
 };
@@ -85,21 +85,22 @@ function LinksWidgets() {
             </div>
           </div>
         </div>
-        <div className='LinksWidgets_CategoriesTitles' >
-          <span className='LinksWidgets_CategoriesTitle'>دسته بندی های موجود</span>
-          <span className='LinksWidgets_CategoriesDescribe'> لیست دسته بندی های موجود برای لینک های ثبت شده</span>
+        <div className='LinksWidgets_CategoriesTitlesSticky'>
+          <div className='LinksWidgets_CategoriesTitles' >
+            <span className='LinksWidgets_CategoriesTitle'>دسته بندی های موجود</span>
+            <span className='LinksWidgets_CategoriesDescribe'> لیست دسته بندی های موجود برای لینک های ثبت شده</span>
+          </div>
+          <div className='LinksWidgets_Categories' >
+              <LinksW_Category title="ورزشی" number={23}/>
+              <LinksW_Category title="پژوهشی" number={23}/>
+              <LinksW_Category title="سیاسی" number={23}/>
+              <LinksW_Category title="مورد علاقه" number={23}/>
+              <LinksW_Category title="خنده دار" number={23}/>
+              <LinksW_Category title="شخصی" number={23}/>
+              <div className='LinksWidgets_CategoriesAddButton' onClick={handleOpen} >افزودن</div>
+              <AddForm open={open} setOpen={setOpen}/>
+          </div>
         </div>
-        <div className='LinksWidgets_Categories' >
-            <LinksW_Category title="ورزشی" number={23}/>
-            <LinksW_Category title="پژوهشی" number={23}/>
-            <LinksW_Category title="سیاسی" number={23}/>
-            <LinksW_Category title="مورد علاقه" number={23}/>
-            <LinksW_Category title="خنده دار" number={23}/>
-            <LinksW_Category title="شخصی" number={23}/>
-            <div className='LinksWidgets_CategoriesAddButton' onClick={handleOpen} >افزودن</div>
-            <AddForm open={open} setOpen={setOpen}/>
-        </div>
-
     </div>
   )
 }

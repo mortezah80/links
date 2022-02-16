@@ -87,8 +87,8 @@ function LinksC_Filters() {
           },*/
 
           width:130,
- 
-          borderColor :"rgb(55, 141, 216,0.2)",
+          backgroundColor:"rgba(38, 178, 233, 0.121)",
+          borderColor :"rgb(55, 141, 216,0.1)",
           "&:hover": {
             borderColor: "rgb(55, 141, 216,0.5)"
           }
@@ -135,7 +135,7 @@ function LinksC_Filters() {
   return (
     <div className='LinksC_Filters'>
         <div className='LinksC_SelectBoxesSwitch'>
-            <div className='LinksC_SelectBoxContainer'>
+            <div className='LinksC_SelectBoxContainer LinksC_SelectBoxContainer1'>
             <Select  className="LinksC_SelectBox" styles={customStyles}  options={options} 
                 components={{
                 IndicatorSeparator: () => null
@@ -152,12 +152,12 @@ function LinksC_Filters() {
             placeholder={<div className='LinksC_SelectPlaceHolder'>دیفالت</div>}
             />
             </div>
-            <div>
+            <div className='LinksC_FiltersSwitchContainer'>
             <FormControlLabel
                 color='primary' 
                 control={<IOSSwitch checked={state.checkedB} onChange={handleChange} name="checkedB" />}
-                label="تایتل سوییچ"
             />
+            <span className='LinksC_FiltersSwitchTitle'>تایتل سوییچ</span>
             </div>
         </div>
 
@@ -165,21 +165,27 @@ function LinksC_Filters() {
         <div className='LinksC_MultiBottun'>
             <div className={['LinksC_MultiBottun_Button', LCActiveButton===1 ? "LinksC_MultiBottun_ButtonActive" : ""].join(" ")} onClick={() => setLCActiveButton(1)}>
                 <span><FaTelegramPlane className="LH_telegramIcon LC_Icon"/></span>
+                <span className='LinksC_MultiBottun_ButtonTitle'>تلگرام</span>
             </div>
             <div className={['LinksC_MultiBottun_Button', LCActiveButton===2 ? "LinksC_MultiBottun_ButtonActive" : ""].join(" ")} onClick={() => setLCActiveButton(2)}>
                 <span><AiFillInstagram className="LH_instgramIcon LC_Icon"/></span>
+                <span className='LinksC_MultiBottun_ButtonTitle'>اینستاگرام</span>
             </div>
             <div className={['LinksC_MultiBottun_Button', LCActiveButton===3 ? "LinksC_MultiBottun_ButtonActive" : ""].join(" ")} onClick={() => setLCActiveButton(3)}>
                 <span><BiRss className="LH_rssIcon LC_Icon"/></span>
+                <span className='LinksC_MultiBottun_ButtonTitle'>خبرخوان</span>
             </div>
             <div className={['LinksC_MultiBottun_Button', LCActiveButton===4 ? "LinksC_MultiBottun_ButtonActive" : ""].join(" ")} onClick={() => setLCActiveButton(4)}>
                 <span><AiFillTwitterCircle className="LH_twitterIcon LC_Icon"/></span>
+                <span className='LinksC_MultiBottun_ButtonTitle'>توییتر</span>
             </div>
             <div className={['LinksC_MultiBottun_Button', LCActiveButton===5 ? "LinksC_MultiBottun_ButtonActive" : ""].join(" ")} onClick={() => setLCActiveButton(5)}>
                 <span><ImBullhorn className="LH_sheypoorIcon LC_Icon"/></span>
+                <span className='LinksC_MultiBottun_ButtonTitle'>شیپور</span>
             </div>
             <div className={['LinksC_MultiBottun_Button', LCActiveButton===6 ? "LinksC_MultiBottun_ButtonActive" : ""].join(" ")} onClick={() => setLCActiveButton(6)}>
                 <span> <ImNewspaper className="LH_paperIcon LC_Icon" /> </span>
+                <span className='LinksC_MultiBottun_ButtonTitle'>روزنامه</span>
             </div>
         </div>
 

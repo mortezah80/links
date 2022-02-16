@@ -24,8 +24,8 @@ function LinksC_Search() {
       },*/
 
       width:130,
-
-      borderColor :"rgb(55, 141, 216,0.2)",
+      backgroundColor:"rgba(38, 178, 233, 0.121)",
+      borderColor :"rgb(55, 141, 216,0.1)",
       "&:hover": {
         borderColor: "rgb(55, 141, 216,0.5)"
       }
@@ -87,6 +87,7 @@ const [state, setState] = React.useState({
         <input type="text" name="name" className='LinksC_SearchInput' placeholder='متن مورد نظر خود را وارد کنید' />
         <div className='LinksC_SearchButtons'>
           <div className='LinksC_SearchButton'>
+          <AddForm open={open} setOpen={setOpen}/>
             <div className='LinksC_SearchButton'>
                 <span>جست و جو</span>
             </div>
@@ -95,7 +96,7 @@ const [state, setState] = React.useState({
           <div className='LinksC_AddButton' onClick={handleOpen}> 
               <span>افزودن</span>
           </div>
-          <AddForm open={open} setOpen={setOpen}/>
+       
         </div>
     </div>
   )
