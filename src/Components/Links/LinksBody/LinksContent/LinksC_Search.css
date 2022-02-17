@@ -65,6 +65,7 @@
 }
 .LinksC_SearchButtonIcon {
     margin-right:5px;
+    font-size:18px;
 }
 .LinksC_AddButton {
     width: 70px;
@@ -80,4 +81,19 @@
 }
 .LinksC_AddButton:hover {
     color:rgb(0, 183, 255);
+}
+
+.MuiNativeSelect-icon {
+    color:rgb(70, 153, 222) !important;
+}
+.LinksCoption {
+    font-size: 13px !important;
+    font-family: 'Shabnam' !important;
+
+}
+.MuiNativeSelect-selectMenu  {
+    padding: 40px !important;
+}
+..MuiNativeSelect-selectMenu {
+    background-color: red !important;
 }

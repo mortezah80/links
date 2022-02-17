@@ -7,7 +7,7 @@ import AddForm from '../../AddForm';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 export const data = {
-  labels: ['Red', 'Blue', 'Yellow', 'Green'],
+  labels: ['نارنجی', 'سبز', 'بنفش', 'بنفش'],
   datasets: [
     {
       label: '# of Votes',
@@ -34,6 +34,11 @@ export const data = {
 };
 const options = {
     plugins: {
+      tooltip: {
+        padding:8,
+        rtl:true,
+        boxWidth:30,
+      },
       percentageInnerCutout: 1,
       legend: {
         display: false,
@@ -55,7 +60,7 @@ function LinksWidgets() {
   return (
     <div className='LinksWidgets'>
         <div className='LinksWidgetsChart'>
-          <Doughnut data={data} options={options} />
+          <Doughnut data={data} options={options} className='LinksWidgetsDonut'/>
           <div className='LinksWidgetsChartFilltextContainer'>
             <span className='LinksWidgetsChartFilltextTitle'>لینک فرهنگی</span>
             <span className='LinksWidgetsChartFilltext'>38%</span>

@@ -8,6 +8,7 @@
     align-items: center;
     flex-direction: column;
     box-shadow:3px 3px 7px 1px rgba(0, 0, 0, 0.199);
+    margin-bottom: 30px;
 }
 
 .LH_telegramIcon {

@@ -1,90 +1,123 @@
 import React from 'react'
 import './LinksC_Search.css'
-import Select from 'react-select'
+
 import AddForm from '../../AddForm';
 import {CgSearch} from 'react-icons/cg'
 import {MdPlaylistAdd} from 'react-icons/md'
+import { makeStyles, withStyles } from '@material-ui/core/styles';
+import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
+import NativeSelect from '@material-ui/core/NativeSelect';
+import InputBase from '@material-ui/core/InputBase';
 
-const options = [
-    { value: '0', label: 'بسیار پر تکرار' },
-    { value: '1', label: 'پر تکرار' },
-    { value: '2', label: 'کم تکرار' },
-    { value: '3', label: 'بسیار کم تکرار' }
-  ]
+
+
+const styles = theme => ({
+  root: {
+    minWidth: 60,
+    padding: 0,
+    textAlign: "center",
+    color: "#000",
+    fontWeight: "bold"
+  },
+  selectEmpty: {
+    paddingLeft: "6px",
+    backgroundColor: "#3f51b5"
+  },
+  select: {
+    color: "white",
+    "&:not([multiple]) option": {
+      backgroundColor: "lightgray"
+    }
+  }
+});
+
+
+
+const BootstrapInput = withStyles((theme) => ({
+  root: {
+    'label + &': {
+      marginTop: theme.spacing(3),
+    },
+    height:'10px',
+  },
+  input: {
+    color:'rgb(70, 153, 222)',
+    fontWeight:'bold',
+    fontFamily:'Shabnam',
+    height:'20px',
+    width:'100px',
+    borderRadius: 4,
+    position: 'relative',
+    backgroundColor: 'rgba(203, 229, 254,0.6)',
+    border: 'none',
+    fontSize: 11,
+    transition: theme.transitions.create(['border-color', 'box-shadow']),
+    // Use the system font instead of the default Roboto font.
+    fontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+    '&:focus': {
+      borderRadius: 4,
+      border: '1px solid rgba(21, 229, 254,1)',
+      backgroundColor:'rgba(203, 229, 254,0.8)'
+    },
+  },
+}))(InputBase);
+
+const useStyles = makeStyles((theme) => ({
+  margin: {
+    margin: theme.spacing(1),
+  },
+}));
 
 function LinksC_Search() {
-  const customStyles = {
-    control: (base, state) => ({
-      ...base,
-     /* background: "rgb(55, 141, 216,0.2)",*/
-      color:"#3f97df",
-      borderRadius: "7px",
-      boxShadow: state.isFocused ? null : null,
-      /*borderColor: state.isFocused ? "yellow" : "green",
-      "&:hover": {
-        borderColor: state.isFocused ? "red" : "blue"
-      },*/
-
-      width:130,
-      backgroundColor:"rgba(38, 178, 233, 0.121)",
-      borderColor :"rgb(55, 141, 216,0.1)",
-      "&:hover": {
-        borderColor: "rgb(55, 141, 216,0.5)"
-      }
-    }),
-    singleValue: (provided) => ({
-      ...provided,
-      color: 'rgb(55, 141, 216)',
-      fontSize:'11px',
-      fontWeight:"bold",
-
-    }),
-    dropdownIndicator: base => ({
-      ...base,
-      fontSize:'8px',
-      color: "#838AA4" ,
-
-      "&:hover": {
-        color: "rgb(55, 141, 216,0.8)" 
-      }
-    }),
-    menu: base => ({
-      ...base,
-      // override border radius to match the box
-      borderRadius: 0,
-      // kill the gap
-      marginTop: 0
-    }),
-    menuList: base => ({
-      ...base,
-      // kill the white space on first and last option
-      fontSize:'11px',
-    })
-  };
-const [state, setState] = React.useState({
-    checkedA: true,
-    checkedB: true,
-    checkedC: true,
-  });
-
+  const classes = useStyles();
+  const [age, setAge] = React.useState('');
   const handleChange = (event) => {
-    setState({ ...state, [event.target.name]: event.target.checked });
+    setAge(event.target.value);
   };
+
+
   const [open, setOpen] = React.useState(false);
   
   const handleOpen = () => {
     setOpen(true);
   };
 
+  
   return (
     <div className='LinksC_Search'>
         <div className='LinksC_SelectBoxSearchContainer'>
-            <Select className="LinksC_SelectBox" styles={customStyles} options={options} 
-            components={{
-                IndicatorSeparator: () => null
-            }}
-            placeholder={<div className='LinksC_SelectPlaceHolder'>دیفالت</div>}
-            />
+          <FormControl className={classes.margin}>
+            {/*<InputLabel htmlFor="demo-customized-select-native">Age</InputLabel>*/}
+            <NativeSelect
+              classes={{
+                root: classes.selectEmpty,
+                select: classes.select
+              }}
+              size="small"
+              id="demo-customized-select-native"
+              value={age}
+              onChange={handleChange}
+              input={<BootstrapInput />}
+            >
+              <option className='LinksCoption' value={10}>گزینه ی اول </option>
+              <option className='LinksCoption' value={20}>گزینه ی دوم</option>
+              <option className='LinksCoption' value={30}>گزینه ی سوم</option>
+            </NativeSelect>
+          </FormControl>
         </div>
         <input type="text" name="name" className='LinksC_SearchInput' placeholder='متن مورد نظر خود را وارد کنید' />
         <div className='LinksC_SearchButtons'>

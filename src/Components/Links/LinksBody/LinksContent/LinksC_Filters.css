@@ -24,9 +24,12 @@
     align-items: center;
     padding-top:7px;
 }
+.LinksC_MultiBottun_Button:hover > span {
+    color:rgba(119, 203, 252, 0.952) !important;
+    transition: all 0.1s ease;
+}
 .LinksC_MultiBottun_ButtonActive {
     border:2px solid #6390ca;
-  
     border-bottom: none;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -34,6 +37,7 @@
 }
 .LinksC_MultiBottun_ButtonActive > span {
     color:rgb(0, 162, 255) !important;
+
 }
 .LC_Icon {
     font-size:17px;

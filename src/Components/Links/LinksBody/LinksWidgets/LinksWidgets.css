@@ -134,3 +134,6 @@
     position: sticky;
     top:10px;
 }
+.LinksWidgetsDonut {
+    z-index: 10;
+}
