@@ -11,6 +11,7 @@ export const data = {
   datasets: [
     {
       label: '# of Votes',
+      innerRadius: "20%",
       data: [12, 19, 3, 5],
       backgroundColor: [
         'rgba(253, 153, 65,0.7)',
@@ -27,11 +28,13 @@ export const data = {
       borderWidth: 1.5,
       spacing:30,
       borderRadius:20,
+  
     },
   ],
 };
 const options = {
     plugins: {
+      percentageInnerCutout: 1,
       legend: {
         display: false,
         labels: {
@@ -53,7 +56,11 @@ function LinksWidgets() {
     <div className='LinksWidgets'>
         <div className='LinksWidgetsChart'>
           <Doughnut data={data} options={options} />
-          <span className='LinksWidgetsChartFilltext'>38%</span>
+          <div className='LinksWidgetsChartFilltextContainer'>
+            <span className='LinksWidgetsChartFilltextTitle'>لینک فرهنگی</span>
+            <span className='LinksWidgetsChartFilltext'>38%</span>
+            <span className='LinksWidgetsChartFilltextTitle2'>توضیح</span>
+          </div>
         </div>
         <div className='LinksWidgets_TopCategories'>
           <div className='LinksWidgets_TopCategory'>

@@ -2,6 +2,8 @@ import React from 'react'
 import './LinksC_Search.css'
 import Select from 'react-select'
 import AddForm from '../../AddForm';
+import {CgSearch} from 'react-icons/cg'
+import {MdPlaylistAdd} from 'react-icons/md'
 
 const options = [
     { value: '0', label: 'بسیار پر تکرار' },
@@ -88,13 +90,15 @@ const [state, setState] = React.useState({
         <div className='LinksC_SearchButtons'>
           <div className='LinksC_SearchButton'>
           <AddForm open={open} setOpen={setOpen}/>
-            <div className='LinksC_SearchButton'>
+            <div className='LinksC_SearchButton LinksC_SearchButton1'>
                 <span>جست و جو</span>
+                <CgSearch className='LinksC_SearchButtonIcon'/>
             </div>
           </div>
 
           <div className='LinksC_AddButton' onClick={handleOpen}> 
               <span>افزودن</span>
+              <MdPlaylistAdd className='LinksC_SearchButtonIcon'/>
           </div>
        
         </div>

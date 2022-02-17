@@ -55,19 +55,19 @@ function LinksC_Sroucefilter(props) {
 
             {
               props.type==="all" ?
-              <BsCollectionFill className="LCS_allIcon"/>:
+              <BsCollectionFill className="LCS_allIcon LCS_Icon" />:
               props.type==="telegram" ?
-              <FaTelegramPlane className="LCS_telegramIcon"/> :
+              <FaTelegramPlane className="LCS_telegramIcon LCS_Icon"/> :
               props.type==="instagram" ?
-              <AiFillInstagram className="LCS_instgramIcon"/> :
+              <AiFillInstagram className="LCS_instgramIcon LCS_Icon"/> :
               props.type==="twitter" ? 
-              <AiFillTwitterCircle className="LCS_twitterIcon"/> :
+              <AiFillTwitterCircle className="LCS_twitterIcon LCS_Icon"/> :
               props.type==="rss" ?
-              <BiRss className="LCS_rssIcon"/> :
+              <BiRss className="LCS_rssIcon LCS_Icon"/> :
               props.type==="paper" ?
-              <ImNewspaper className="LCS_paperIcon" /> :
+              <ImNewspaper className="LCS_paperIcon LCS_Icon" /> :
               props.type==="sheypoor" ?
-              <ImBullhorn className="LCS_sheypoorIcon"/>:
+              <ImBullhorn className="LCS_sheypoorIcon LCS_Icon"/>:
               null
           }
                    

@@ -41,10 +41,11 @@
     justify-content: flex-start;
 }
 .LinksC_FeedBoxContent {
-    padding:0px 17px;
+    padding:0px 0px;
 }
 .LinksC_FeedBoxUserContent {
     margin-top:60px;
+    padding:0px 17px;
 }
 .LinksC_FeedBoxUserContent {
     display: flex;
@@ -118,10 +119,46 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom:2px dashed rgb(216, 216, 216);
-    padding:20px 0px;
+
+    padding:20px 10px;
     position: relative;
     align-items: flex-start;
+    width: 100%;
+ 
+}
+
+.LinksC_FeedBoxKHMContainer1 {
+    border-right:4px solid rgba(18, 127, 230, 0.486) ;
+    border-left:4px solid rgba(18, 127, 230, 0.486);
+    /*border-image: 
+    linear-gradient(
+      to bottom, 
+      rgba(18, 127, 230, 0.486), 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;*/
+
+}
+
+.LinksC_FeedBoxKHMContainer2 {
+    border-right:4px solid rgba(230, 18, 71, 0.486) ;
+    border-left:4px solid rgba(230, 18, 71, 0.486);
+    /*border-image: 
+    linear-gradient(
+      to bottom, 
+      rgba(230, 18, 18, 0.486), 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;*/
+
+}
+.LinksC_FeedBoxKHMContainer3 {
+    border-right:4px solid rgba(18, 230, 195, 0.486) ;
+    border-left:4px solid rgba(18, 230, 195, 0.486);
+    /*border-image: 
+    linear-gradient(
+      to bottom, 
+      rgba(18, 230, 195, 0.486), 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;*/
 }
 .LinksC_FeedBoxKHMTitle {
     flex:0.3;
@@ -154,6 +191,7 @@
     display: flex;
     flex-direction: column;
     margin-top:20px;
+    padding: 0px 17px;
 }
 .LinksC_FeedBoxProfilesTitle {
     display: flex;
@@ -215,7 +253,7 @@
     justify-content: space-between;
     font-size:11px;
     color:rgb(194, 194, 194);
-    padding: 0px 10px;
+    padding: 0px 27px;
     margin-top:8px;
 }
 .LinksC_FeedBoxFooterButtons {
@@ -223,6 +261,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 10px;
+    padding: 0px 17px;
 
 }
 .LinksC_FeedBoxFooterButton {
@@ -252,6 +291,7 @@
     border-bottom:2px solid rgb(236, 236, 236);
     margin-top:10px;
     height: 50px;
+    padding: 0px 17px;
 }
 
 .LinksC_FeedBoxCategory {
@@ -308,4 +348,24 @@
 }
 .LinksC_FeedBoxHeaderDownloadButton {
     cursor: pointer;
+}
+
+.LinksC_FeedBoxMetaDataContainer {
+    border-bottom:2px dashed rgb(216, 216, 216);
+    padding: 10px 0px;
+    margin: 0px 1px;
+}
+
+.LinksC_FeedBoxHashtagsContainer {
+    border-bottom:2px dashed rgb(216, 216, 216);
+    padding: 10px 0px;
+    margin: 0px 1px;
+}
+.LinksC_FeedBoxKeysContainer {
+    border-bottom:2px dashed rgb(216, 216, 216);
+    padding: 10px 0px;
+    margin: 0px 1px;
+}
+.LinksC_FeedBoxHashtagsContainer {
+
 }

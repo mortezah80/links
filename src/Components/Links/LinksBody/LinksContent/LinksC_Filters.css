@@ -12,7 +12,8 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     align-items: center;
-    color:
+    flex:0.4;
+
 }
 .LinksC_MultiBottun_Button {
     border-bottom: 2px solid #6390ca;
@@ -39,7 +40,27 @@
     color:rgb(163, 163, 163);
 }
 
-
+.LH_telegramIcon {
+    color:#11cbfa;
+}
+.LH_instgramIcon {
+    color:#e1306c;
+}
+.LH_twitterIcon {
+    color:#00ACEE;
+}
+.LH_rssIcon {
+    color:#f38b5b;
+}
+.LH_paperIcon {
+    color:rgba(81,214,168,1);
+}
+.LH_sheypoorIcon {
+    color:#0084FF;
+}
+.LH_allIcon {
+    color:#0bc6d3;
+}
 
 .LinksC_SelectBoxContainer {
     display: flex;
@@ -62,6 +83,8 @@
 .LinksC_SelectBoxesSwitch {
     display: flex;
     align-items: center;
+    border-bottom: 2px solid #6390ca;
+    flex:0.6;
 
 }
 .LinksC_SelectPlaceHolder {
@@ -88,7 +111,4 @@
     display: flex;
     align-items: center;
     padding-bottom: 6px;
-}
-.LinksC_MultiBottun_ButtonActive .LC_Icon {
-    color:rgb(0, 162, 255) !important;
 }

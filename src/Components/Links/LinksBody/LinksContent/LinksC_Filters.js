@@ -164,27 +164,27 @@ function LinksC_Filters() {
 
         <div className='LinksC_MultiBottun'>
             <div className={['LinksC_MultiBottun_Button', LCActiveButton===1 ? "LinksC_MultiBottun_ButtonActive" : ""].join(" ")} onClick={() => setLCActiveButton(1)}>
-                <span><FaTelegramPlane className="LH_telegramIcon LC_Icon"/></span>
+                <span><FaTelegramPlane className={["LC_Icon", LCActiveButton===1 ? "LH_telegramIcon": ""].join(" ")}/></span>
                 <span className='LinksC_MultiBottun_ButtonTitle'>تلگرام</span>
             </div>
             <div className={['LinksC_MultiBottun_Button', LCActiveButton===2 ? "LinksC_MultiBottun_ButtonActive" : ""].join(" ")} onClick={() => setLCActiveButton(2)}>
-                <span><AiFillInstagram className="LH_instgramIcon LC_Icon"/></span>
+                <span><AiFillInstagram className={["LC_Icon", LCActiveButton===2 ? "LH_instgramIcon": ""].join(" ")}/></span>
                 <span className='LinksC_MultiBottun_ButtonTitle'>اینستاگرام</span>
             </div>
             <div className={['LinksC_MultiBottun_Button', LCActiveButton===3 ? "LinksC_MultiBottun_ButtonActive" : ""].join(" ")} onClick={() => setLCActiveButton(3)}>
-                <span><BiRss className="LH_rssIcon LC_Icon"/></span>
+                <span><BiRss className={["LC_Icon", LCActiveButton===3 ? "LH_rssIcon": ""].join(" ")}/></span>
                 <span className='LinksC_MultiBottun_ButtonTitle'>خبرخوان</span>
             </div>
             <div className={['LinksC_MultiBottun_Button', LCActiveButton===4 ? "LinksC_MultiBottun_ButtonActive" : ""].join(" ")} onClick={() => setLCActiveButton(4)}>
-                <span><AiFillTwitterCircle className="LH_twitterIcon LC_Icon"/></span>
+                <span><AiFillTwitterCircle className={["LC_Icon", LCActiveButton===4 ? "LH_twitterIcon": ""].join(" ")}/></span>
                 <span className='LinksC_MultiBottun_ButtonTitle'>توییتر</span>
             </div>
             <div className={['LinksC_MultiBottun_Button', LCActiveButton===5 ? "LinksC_MultiBottun_ButtonActive" : ""].join(" ")} onClick={() => setLCActiveButton(5)}>
-                <span><ImBullhorn className="LH_sheypoorIcon LC_Icon"/></span>
+                <span><ImBullhorn className={["LC_Icon", LCActiveButton===5 ? "LH_sheypoorIcon": ""].join(" ")}/></span>
                 <span className='LinksC_MultiBottun_ButtonTitle'>شیپور</span>
             </div>
-            <div className={['LinksC_MultiBottun_Button', LCActiveButton===6 ? "LinksC_MultiBottun_ButtonActive" : ""].join(" ")} onClick={() => setLCActiveButton(6)}>
-                <span> <ImNewspaper className="LH_paperIcon LC_Icon" /> </span>
+            <div className={['LinksC_MultiBottun_Button', LCActiveButton===6 ? "LinksC_MultiBottun_ButtonActive " : ""].join(" ")} onClick={() => setLCActiveButton(6)}>
+                <span> <ImNewspaper className={["LC_Icon", LCActiveButton===6 ? "LH_paperIcon": ""].join(" ")}/> </span>
                 <span className='LinksC_MultiBottun_ButtonTitle'>روزنامه</span>
             </div>
         </div>

@@ -5,9 +5,7 @@ import LinksC_FeedBox_KHMTag from './LinksC_FeedBox_KHMTag'
 import zIndex from '@material-ui/core/styles/zIndex';
 
 function LinksC_FeedBox(props) {
-    const [Showmore , setShowmore] = useState(false)
-    const [Showmore2 , setShowmore2] = useState(false)
-    const [Showmore3 , setShowmore3] = useState(false)
+    let [Showmore,Showmore2,Showmore3,setShowmore,setShowmore2,setShowmore3] = props.Showmores;
     const [ShowDownload , SetShowDownload] = useState(false)
     let FeedBoxzIndexCat = 1;
     const stc = require('string-to-color');
@@ -90,77 +88,83 @@ function LinksC_FeedBox(props) {
                     }
                 </div>
             </div>
-            <div className='LinksC_FeedBoxKHMContainer'>
-                <div className='LinksC_FeedBoxKHMTitle'>           {/* Keys , Hashtags , MetaData => KHM*/}
-                    <span className='LinksC_FeedBoxKHM_TitleName'>کلمات کلیدی</span>
-                    <span className='LinksC_FeedBoxKHM_ShowMore' onClick={() => setShowmore(!Showmore)}>{Showmore? "نمایش کمتر" : "نمایش بیشتر"}  </span>
-                </div>
-                <div className='LinksC_FeedBoxKHM'>
-                    <LinksC_FeedBox_KHMTag text="طبیعت"/>
-                    <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
-                    <LinksC_FeedBox_KHMTag text="طبیعت"/>
-                    <LinksC_FeedBox_KHMTag text="طبیعت"/>
-                    <LinksC_FeedBox_KHMTag text="طبیعت"/>
-                    {
-                        Showmore ? 
-                        <>
-                        <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
+            <div className='LinksC_FeedBoxKeysContainer'>
+                <div className='LinksC_FeedBoxKHMContainer LinksC_FeedBoxKHMContainer1 '>
+                    <div className='LinksC_FeedBoxKHMTitle'>           {/* Keys , Hashtags , MetaData => KHM*/}
+                        <span className='LinksC_FeedBoxKHM_TitleName'>کلمات کلیدی</span>
+                        <span className='LinksC_FeedBoxKHM_ShowMore' onClick={() => setShowmore(!Showmore)}>{Showmore? "نمایش کمتر" : "نمایش بیشتر"}  </span>
+                    </div>
+                    <div className='LinksC_FeedBoxKHM'>
                         <LinksC_FeedBox_KHMTag text="طبیعت"/>
                         <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
                         <LinksC_FeedBox_KHMTag text="طبیعت"/>
-                        </>
-                        :
-                        <></>
-                    }
+                        <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                        <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                        {
+                            Showmore ? 
+                            <>
+                            <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
+                            <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                            <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
+                            <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                            </>
+                            :
+                            <></>
+                        }
 
+                    </div>
                 </div>
             </div>
-            <div className='LinksC_FeedBoxKHMContainer'>
-                <div className='LinksC_FeedBoxKHMTitle'>
-                    <span className='LinksC_FeedBoxKHM_TitleName'>هشتگ ها </span>
-                    <span className='LinksC_FeedBoxKHM_ShowMore'  onClick={() => setShowmore2(!Showmore2)}>{Showmore? "نمایش کمتر" : "نمایش بیشتر"} </span>
-                </div>
-                <div className='LinksC_FeedBoxKHM'>
-                    <LinksC_FeedBox_KHMTag text="طبیعت"/>
-                    <LinksC_FeedBox_KHMTag text="طبیعت"/>
-                    <LinksC_FeedBox_KHMTag text="طبیعت"/>
-                    <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
-                    <LinksC_FeedBox_KHMTag text="طبیعت"/>
-                    {
-                        Showmore2 ? 
-                        <>
-                        <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
+            <div className='LinksC_FeedBoxHashtagsContainer'>
+                <div className='LinksC_FeedBoxKHMContainer LinksC_FeedBoxKHMContainer2 '>
+                    <div className='LinksC_FeedBoxKHMTitle'>
+                        <span className='LinksC_FeedBoxKHM_TitleName'>هشتگ ها </span>
+                        <span className='LinksC_FeedBoxKHM_ShowMore'  onClick={() => setShowmore2(!Showmore2)}>{Showmore2? "نمایش کمتر" : "نمایش بیشتر"} </span>
+                    </div>
+                    <div className='LinksC_FeedBoxKHM'>
+                        <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                        <LinksC_FeedBox_KHMTag text="طبیعت"/>
                         <LinksC_FeedBox_KHMTag text="طبیعت"/>
                         <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
                         <LinksC_FeedBox_KHMTag text="طبیعت"/>
-                        </>
-                        :
-                        <></>
-                    }
+                        {
+                            Showmore2 ? 
+                            <>
+                            <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
+                            <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                            <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
+                            <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                            </>
+                            :
+                            <></>
+                        }
+                    </div>
                 </div>
             </div>
-            <div className='LinksC_FeedBoxKHMContainer LinkC_DotBorderBottom'>
-                <div className='LinksC_FeedBoxKHMTitle'>
-                    <span className='LinksC_FeedBoxKHM_TitleName'>متا دیتا </span>
-                    <span className='LinksC_FeedBoxKHM_ShowMore'  onClick={() => setShowmore3(!Showmore3)}>{Showmore? "نمایش کمتر" : "نمایش بیشتر"}  </span>
-                </div>
-                <div className='LinksC_FeedBoxKHM'>
-                    <LinksC_FeedBox_KHMTag text="طبیعت"/>
-                    <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
-                    <LinksC_FeedBox_KHMTag text="طبیعت"/>
-                    <LinksC_FeedBox_KHMTag text="طبیعت"/>
-                    <LinksC_FeedBox_KHMTag text="طبیعت"/>
-                    {
-                        Showmore3 ? 
-                        <>
-                        <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
+            <div className='LinksC_FeedBoxMetaDataContainer LinkC_DotBorderBottom'>
+                <div className='LinksC_FeedBoxKHMContainer LinksC_FeedBoxKHMContainer3 '>
+                    <div className='LinksC_FeedBoxKHMTitle'>
+                        <span className='LinksC_FeedBoxKHM_TitleName'>متا دیتا </span>
+                        <span className='LinksC_FeedBoxKHM_ShowMore'  onClick={() => setShowmore3(!Showmore3)}>{Showmore3? "نمایش کمتر" : "نمایش بیشتر"}  </span>
+                    </div>
+                    <div className='LinksC_FeedBoxKHM'>
                         <LinksC_FeedBox_KHMTag text="طبیعت"/>
                         <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
                         <LinksC_FeedBox_KHMTag text="طبیعت"/>
-                        </>
-                        :
-                        <></>
-                    }
+                        <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                        <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                        {
+                            Showmore3 ? 
+                            <>
+                            <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
+                            <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                            <LinksC_FeedBox_KHMTag text="طبیعت های بکر"/>
+                            <LinksC_FeedBox_KHMTag text="طبیعت"/>
+                            </>
+                            :
+                            <></>
+                        }
+                    </div>
                 </div>
             </div>
             <div className='LinksC_FeedBoxProfilesContainer'>
