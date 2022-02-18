@@ -11,8 +11,20 @@ import Drawer from '@material-ui/core/Drawer';
 import {HiMenu} from 'react-icons/hi'
 import { makeStyles } from '@material-ui/core/styles';
 import LinksWidgetsDrawer from '../LinksWidgets/LinksWidgetsDrawer'
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper";
 
 function LinksContent(props) {
+  const q1200 = useMediaQuery({ query: '(max-width: 1260px)' })
+  const q1110 = useMediaQuery({ query: '(max-width: 1110px)' })
+  const q885 = useMediaQuery({ query: '(max-width: 885px)' })
+  const q815 = useMediaQuery({ query: '(max-width: 815px)' })
+  const q657 = useMediaQuery({ query: '(max-width: 657px)' })
+  const q585 = useMediaQuery({ query: '(max-width: 585px)' })
+  const q407 = useMediaQuery({ query: '(max-width: 407px)' })
   const useStyles = makeStyles({
     paper: {
       background: '#313A57',
@@ -31,12 +43,42 @@ function LinksContent(props) {
         <LinksC_Search/>
   
           <div className='LinksC_SroucefiltersContainer'>
-            <div className='LinksC_SroucefiltersArrow'>
+            {/*<div className='LinksC_SroucefiltersArrow'>
               <AiOutlineArrowRight/>
-            </div>
+          </div>*/}
             
             <div className='LinksC_Sroucefilters' >
-              {
+            <Swiper
+                    
+                    dir="rtl"
+                    slidesPerView={q407? 3 : q585? 4 : 6}
+                    spaceBetween={0}
+                    slidesPerGroup={1}
+                    grabCursor={true}
+                
+                    loopFillGroupWithBlank={true}
+                    centeredSlidesBounds={true}
+                    pagination={{
+                    clickable: true,
+                    }}
+                    navigation= { {
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev',
+                    }
+                    }
+                    modules={[Pagination, Navigation]}
+                   
+                >
+                    <div className="mySwiper">
+                    <SwiperSlide> <LinksC_Sroucefilter type="instagram" active={ActiveSourceFilter===1? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/></SwiperSlide>
+                    <SwiperSlide> <LinksC_Sroucefilter type="twitter" active={ActiveSourceFilter===2? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/></SwiperSlide>
+                    <SwiperSlide><LinksC_Sroucefilter type="rss" active={ActiveSourceFilter===3? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/></SwiperSlide>
+                    <SwiperSlide><LinksC_Sroucefilter type="sheypoor" active={ActiveSourceFilter===4? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/></SwiperSlide>
+                    <SwiperSlide><LinksC_Sroucefilter type="paper" active={ActiveSourceFilter===5? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/></SwiperSlide>
+                    <SwiperSlide><LinksC_Sroucefilter type="telegram" active={ActiveSourceFilter===6? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/></SwiperSlide>
+                    </div>
+                </Swiper>
+              {/*
                 q460 ?
                 <>
                 <LinksC_Sroucefilter type="instagram" active={ActiveSourceFilter===1? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
@@ -58,11 +100,12 @@ function LinksContent(props) {
                   <LinksC_Sroucefilter type="paper" active={ActiveSourceFilter===5? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
                   <LinksC_Sroucefilter type="telegram" active={ActiveSourceFilter===6? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
                 </>
-              }
-                 </div>
-            <div className='LinksC_SroucefiltersArrow'>
+              */ }
+                </div>
+              
+            {/*<div className='LinksC_SroucefiltersArrow'>
               <AiOutlineArrowLeft/>
-            </div>
+            </div>*/}
           </div>
           <div className='LinksC_PaginationContainerinContent'>
             <LinksC_Pagination number={5}/>

@@ -114,9 +114,8 @@
 
 .swiper-button-next::after , 
 .swiper-button-prev::after{
-    display: none;
+   /* display: none;*/
 }
-
 .LinksHeaderButtonContainer1 {
     background: rgb(250,46,135);
     background: linear-gradient(45deg, rgba(250,46,135,1) 0%, rgba(246,58,196,1) 100%); 
