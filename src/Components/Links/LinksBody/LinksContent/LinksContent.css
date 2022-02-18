@@ -40,3 +40,8 @@
     border-radius: 10px;
     box-shadow:3px 3px 7px 1px rgba(202, 202, 202, 0.5);
 }
+@media screen and ( max-width : 815px ) {
+    .LinksContent {
+        flex:1;
+    }
+}

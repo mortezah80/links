@@ -103,6 +103,7 @@
     font-size: 11px;
     color:rgb(187, 187, 187);
     margin-top:7px;
+    text-align: right;
 }
 .LinksWidgets_Categories {
     margin-top:10px;
@@ -136,4 +137,10 @@
 }
 .LinksWidgetsDonut {
     z-index: 10;
+}
+
+@media screen and ( max-width : 815px ) {
+    .LinksWidgets {
+        display: none;
+    }
 }

@@ -6,8 +6,13 @@ import LinksC_Search from './LinksC_Search'
 import LinksC_Sroucefilter from './LinksC_Sroucefilter'
 import {AiOutlineArrowLeft,AiOutlineArrowRight} from 'react-icons/ai'
 import LinksC_Pagination from './LinksC_Pagination'
+import { useMediaQuery } from 'react-responsive'
+
+
 
 function LinksContent() {
+  const q590 = useMediaQuery({ query: '(max-width: 590px)' })
+  const q460 = useMediaQuery({ query: '(max-width: 460px)' })
   const [ActiveSourceFilter,SetActiveSourceFilter] = useState(1);
   return (
     <div className='LinksContent'>
@@ -21,13 +26,30 @@ function LinksContent() {
             </div>
             
             <div className='LinksC_Sroucefilters' >
-              <LinksC_Sroucefilter type="instagram" active={ActiveSourceFilter===1? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
-              <LinksC_Sroucefilter type="twitter" active={ActiveSourceFilter===2? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
-              <LinksC_Sroucefilter type="rss" active={ActiveSourceFilter===3? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
-              <LinksC_Sroucefilter type="sheypoor" active={ActiveSourceFilter===4? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
-              <LinksC_Sroucefilter type="paper" active={ActiveSourceFilter===5? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
-              <LinksC_Sroucefilter type="telegram" active={ActiveSourceFilter===6? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
-            </div>
+              {
+                q460 ?
+                <>
+                <LinksC_Sroucefilter type="instagram" active={ActiveSourceFilter===1? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
+                <LinksC_Sroucefilter type="twitter" active={ActiveSourceFilter===2? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
+                </>
+                :
+                q590 ?
+                <>
+                  <LinksC_Sroucefilter type="instagram" active={ActiveSourceFilter===1? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
+                  <LinksC_Sroucefilter type="twitter" active={ActiveSourceFilter===2? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
+                  <LinksC_Sroucefilter type="rss" active={ActiveSourceFilter===3? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
+                  <LinksC_Sroucefilter type="sheypoor" active={ActiveSourceFilter===4? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
+                </> :
+                <>
+                  <LinksC_Sroucefilter type="instagram" active={ActiveSourceFilter===1? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
+                  <LinksC_Sroucefilter type="twitter" active={ActiveSourceFilter===2? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
+                  <LinksC_Sroucefilter type="rss" active={ActiveSourceFilter===3? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
+                  <LinksC_Sroucefilter type="sheypoor" active={ActiveSourceFilter===4? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
+                  <LinksC_Sroucefilter type="paper" active={ActiveSourceFilter===5? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
+                  <LinksC_Sroucefilter type="telegram" active={ActiveSourceFilter===6? true : false} SetActiveSourceFilter = {SetActiveSourceFilter}/>
+                </>
+              }
+                 </div>
             <div className='LinksC_SroucefiltersArrow'>
               <AiOutlineArrowLeft/>
             </div>

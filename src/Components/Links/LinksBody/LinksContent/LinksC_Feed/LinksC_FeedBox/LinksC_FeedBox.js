@@ -74,7 +74,7 @@ function LinksC_FeedBox(props) {
                 </div>
             </div>
             <div className='LinksC_FeedBoxCategoriesContainer'>
-                <span className='LinksC_FeedBoxCategoriesTitle'>دسته بندی های ثبت شده برای لینک مورد نظر</span>
+                <span className='LinksC_FeedBoxCategoriesTitle'>دسته بندی های ثبت شده </span>
                 <div className='LinksC_FeedBoxCategories'>
                     {
                         LickC_FeedBoxCats.map( (word) => {

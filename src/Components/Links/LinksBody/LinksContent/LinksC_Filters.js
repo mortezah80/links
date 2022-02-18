@@ -15,74 +15,8 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import NativeSelect from '@material-ui/core/NativeSelect';
 import InputBase from '@material-ui/core/InputBase';
+import { useMediaQuery } from 'react-responsive'
 
-const styles = theme => ({
-  root: {
-    minWidth: 60,
-    padding: 0,
-    textAlign: "center",
-    color: "#000",
-    fontWeight: "bold"
-  },
-  selectEmpty: {
-    paddingLeft: "6px",
-    backgroundColor: "#3f51b5"
-  },
-  select: {
-    color: "white",
-    "&:not([multiple]) option": {
-      backgroundColor: "lightgray"
-    }
-  }
-});
-
-
-
-const BootstrapInput = withStyles((theme) => ({
-  root: {
-    'label + &': {
-      marginTop: theme.spacing(3),
-    },
-    height:'10px',
-  },
-  input: {
-    color:'rgb(70, 153, 222)',
-    fontWeight:'bold',
-    fontFamily:'Shabnam',
-    height:'20px',
-    width:'100px',
-    borderRadius: 4,
-    position: 'relative',
-    backgroundColor: 'rgba(203, 229, 254,0.6)',
-    border: 'none',
-    fontSize: 11,
-    transition: theme.transitions.create(['border-color', 'box-shadow']),
-    // Use the system font instead of the default Roboto font.
-    fontFamily: [
-      '-apple-system',
-      'BlinkMacSystemFont',
-      '"Segoe UI"',
-      'Roboto',
-      '"Helvetica Neue"',
-      'Arial',
-      'sans-serif',
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-    ].join(','),
-    '&:focus': {
-      borderRadius: 4,
-      border: '1px solid rgba(21, 229, 254,1)',
-      backgroundColor:'rgba(203, 229, 254,0.8)'
-    },
-  },
-}))(InputBase);
-
-const useStyles = makeStyles((theme) => ({
-  margin: {
-    margin: theme.spacing(1),
-  },
-}));
 
 const IOSSwitch = withStyles((theme) => ({
     root: {
@@ -140,9 +74,81 @@ const IOSSwitch = withStyles((theme) => ({
     );
   });
 
+ 
 
 
 function LinksC_Filters() {
+  const q589 = useMediaQuery({ query: '(max-width: 589px)' })
+  const styles = theme => ({
+    root: {
+      minWidth: 60,
+      padding: 0,
+      textAlign: "center",
+      color: "#000",
+      fontWeight: "bold"
+    },
+    selectEmpty: {
+      paddingLeft: "6px",
+      backgroundColor: "#3f51b5"
+    },
+    select: {
+      color: "white",
+      "&:not([multiple]) option": {
+        backgroundColor: "lightgray"
+      }
+    }
+  });
+  
+  
+  
+  const BootstrapInput = withStyles((theme) => ({
+    root: {
+      'label + &': {
+        marginTop: theme.spacing(3),
+      },
+      height:'10px',
+    },
+    input: {
+      color:'rgb(70, 153, 222)',
+      fontWeight:'bold',
+      fontFamily:'Shabnam',
+      height:q589? '15px' :'20px',
+      width:q589 ? '60px' :'100px',
+      borderRadius: 4,
+      position: 'relative',
+      backgroundColor: 'rgba(203, 229, 254,0.6)',
+      border: 'none',
+      fontSize:q589? 9.5 : 11,
+      transition: theme.transitions.create(['border-color', 'box-shadow']),
+      // Use the system font instead of the default Roboto font.
+      fontFamily: [
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        '"Helvetica Neue"',
+        'Arial',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+      ].join(','),
+      '&:focus': {
+        borderRadius: 4,
+        border: '1px solid rgba(21, 229, 254,1)',
+        backgroundColor:'rgba(203, 229, 254,0.8)'
+      },
+    },
+  }))(InputBase);
+  
+  const useStyles = makeStyles((theme) => ({
+    margin: {
+      margin: theme.spacing(1),
+    },
+  }));
+
+  
+
   const classes = useStyles();
   const [age1, setAge1] = React.useState('');
   const handleChange1 = (event) => {
@@ -210,7 +216,7 @@ function LinksC_Filters() {
                 color='primary' 
                 control={<IOSSwitch checked={state.checkedB} onChange={handleChange} name="checkedB" />}
             />
-            <span className='LinksC_FiltersSwitchTitle'>تایتل سوییچ</span>
+            <span className='LinksC_FiltersSwitchTitle'>تایتل </span>
             </div>
         </div>
 

@@ -6,7 +6,11 @@
    /* background-color: rgb(249, 251, 250);*/
     padding: 20px 0px;
 }
-
+.LinksC_PaginationButtonNumbersContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .LinksC_PaginationNumbers {
     display: flex;
@@ -93,3 +97,31 @@
     justify-content: center;
     margin-right:5px;
 }
+.LinksC_PaginationResultGotoResponsive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+@media screen and ( max-width : 1037px ) {
+    .LinksC_PaginationResultGotoResponsive {
+        display: flex;
+        margin-top:20px;
+    }
+    .LinksC_PaginationBeforeRes {
+        display: none;
+    }
+    .LinksC_PaginationContainer {
+        flex-direction: column;
+    }
+}
+@media screen and ( max-width : 457px ) {
+    .LinksC_PaginationNumberResNone {
+        display: none;
+    }
+    .LinksC_PaginationNumbers {
+        margin:0px 10px;
+    }
+}
+

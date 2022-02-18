@@ -7,10 +7,16 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
 import LinksBody from './LinksBody/LinksBody';
+import { useMediaQuery } from 'react-responsive'
 
 function Links() {
   const [LHActiveButton , setLHActiveButton] = useState(1)
-
+  const q1200 = useMediaQuery({ query: '(max-width: 1260px)' })
+  const q1045 = useMediaQuery({ query: '(max-width: 1045px)' })
+  const q885 = useMediaQuery({ query: '(max-width: 885px)' })
+  const q815 = useMediaQuery({ query: '(max-width: 815px)' })
+  const q657 = useMediaQuery({ query: '(max-width: 657px)' })
+  const q483 = useMediaQuery({ query: '(max-width: 483px)' })
   return (
     <div className='Links'>
         <div className='LinksHeader'>
@@ -47,10 +53,11 @@ function Links() {
                 </div>
                 <div className='LinksHeaderSources'>
                     <Swiper
+                    
                         dir="rtl"
-                        slidesPerView={5}
+                        slidesPerView={q483 ? 1 : q657 ? 2 : q815 ? 3 : q885 ? 2 : q1045 ? 3 : q1200 ? 4 : 5}
                         spaceBetween={0}
-                        slidesPerGroup={3}
+                        slidesPerGroup={1}
                         grabCursor={true}
                         loopFillGroupWithBlank={true}
                         centeredSlidesBounds={true}

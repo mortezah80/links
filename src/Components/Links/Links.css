@@ -150,3 +150,12 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     color:rgba(214, 214, 214, 0.671);
     margin-top:7px;
 }
+
+@media screen and ( max-width : 815px ) {
+    .LinksHeaderButtons {
+        display: none;
+    }
+    .LinksHeaderSources {
+        flex:1;
+    }
+}

@@ -5,3 +5,26 @@
     column-gap: 40px;
     row-gap: 20px;
 }
+
+
+@media screen and ( max-width : 1400px ) {
+    .LinksC_Feed {
+        column-gap: 20px;
+    }
+}
+@media screen and ( max-width : 1300px ) {
+    .LinksC_Feed {
+        column-gap: 10px;
+    }
+}
+@media screen and ( max-width : 1120px ) {
+    .LinksC_Feed {
+        grid-template-columns: auto auto;
+        column-gap: 25px;
+    }
+}
+@media screen and ( max-width : 585px ) {
+    .LinksC_Feed {
+        grid-template-columns:auto;
+    }
+}

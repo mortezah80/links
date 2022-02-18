@@ -1,6 +1,5 @@
 .LinksC_FeedBox {
- 
-    min-width: 200px;
+    min-width: 250px;
     background-color: white;
     border-radius: 17px;
     position: relative;
@@ -96,7 +95,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:0px 36px;
+    padding:0px 16px;
     margin-top:23px;
 }
 .LinksC_FeedBoxUserFFD {
@@ -214,7 +213,7 @@
     border-radius: 25px;
 }
 .LinksC_FeedBoxOwnerProfile {
-    flex:0.1;
+   
     width: 30px;
     height: 30px;
     border-radius: 50%;
