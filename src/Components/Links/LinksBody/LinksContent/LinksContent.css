@@ -40,8 +40,38 @@
     border-radius: 10px;
     box-shadow:3px 3px 7px 1px rgba(202, 202, 202, 0.5);
 }
+
+.Links_Drawer {
+
+
+}
+
+.MuiDrawer-paper {
+    background-color: rgb(247, 248, 252) !important;
+    padding: 10px !important;
+}
+.LinksC_PaginationContainerinContentRes {
+    display: none;
+    background-color: white;
+
+}
+
 @media screen and ( max-width : 815px ) {
     .LinksContent {
         flex:1;
+    }
+}
+@media screen and ( max-width : 1100px ) {
+    .LinksContentStickyContainer {
+        position: static;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .LinksC_PaginationContainerinContent {
+        display: none;
+    }
+    .LinksC_PaginationContainerinContentRes {
+        display: inline;
+
     }
 }

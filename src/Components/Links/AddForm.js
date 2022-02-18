@@ -6,13 +6,18 @@ import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import TextField from '@material-ui/core/TextField';
 import {BiCommentDetail} from 'react-icons/bi'
+import { useMediaQuery } from 'react-responsive'
 
-const useStyles = makeStyles((theme) => ({
+  
+
+function AddForm(props) {
+  const q589 = useMediaQuery({ query: '(max-width: 589px)' })
+  const useStyles = makeStyles((theme) => ({
     modal: {
       display: 'flex',
       alignItems: 'center',
-      justifyContent: 'left',
-      paddingLeft:'40px',
+      justifyContent:q589? 'center' :'left',
+      paddingLeft:q589? '0px' : '40px',
     },
     paper: {
       backgroundColor: theme.palette.background.paper,
@@ -21,9 +26,7 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(2, 4, 3),
     },
   }));
-  
 
-function AddForm(props) {
     const classes = useStyles();
   
     const handleClose = () => {

@@ -7,10 +7,20 @@ import LinksC_Sroucefilter from './LinksC_Sroucefilter'
 import {AiOutlineArrowLeft,AiOutlineArrowRight} from 'react-icons/ai'
 import LinksC_Pagination from './LinksC_Pagination'
 import { useMediaQuery } from 'react-responsive'
+import Drawer from '@material-ui/core/Drawer';
+import {HiMenu} from 'react-icons/hi'
+import { makeStyles } from '@material-ui/core/styles';
+import LinksWidgetsDrawer from '../LinksWidgets/LinksWidgetsDrawer'
 
+function LinksContent(props) {
+  const useStyles = makeStyles({
+    paper: {
+      background: '#313A57',
+      color: 'white'
+    }
+  });
+  const styles = useStyles();    
 
-
-function LinksContent() {
   const q590 = useMediaQuery({ query: '(max-width: 590px)' })
   const q460 = useMediaQuery({ query: '(max-width: 460px)' })
   const [ActiveSourceFilter,SetActiveSourceFilter] = useState(1);
@@ -54,9 +64,19 @@ function LinksContent() {
               <AiOutlineArrowLeft/>
             </div>
           </div>
-          <LinksC_Pagination number={5}/>
+          <div className='LinksC_PaginationContainerinContent'>
+            <LinksC_Pagination number={5}/>
+          </div>
+      
+        </div>
+        <div className='LinksC_PaginationContainerinContentRes'>
+            <LinksC_Pagination number={5}/>
         </div>
         <LinksC_Feed/>
+        
+        <Drawer classes={{ paper: styles.paper }} className="Links_Drawer" anchor={'right'} open={props.DP_DrawerB} onClose={() => props.setDP_DrawerB(false)} >
+              <LinksWidgetsDrawer/>
+        </Drawer>
     </div>
   )
 }

@@ -242,3 +242,25 @@
     background-color: rgba(190, 190, 190, 0.301);
     color:rgb(142, 141, 147)
 }
+
+
+@media screen and ( max-width : 471px ) {
+  .LinksFormContainer {
+    width: 300px;
+    height: 550px;
+    overflow-y: scroll;
+    margin:30px 0px;
+  }
+  .LinksFormInputContainerGrid {
+    grid-template-columns: auto;
+    justify-content: center;
+    
+  }
+  .LinksFormInputContainer {
+    width: 240px;
+
+  }
+  .LinksFormEmailContainer {
+    width: 240px;
+  }
+}
